@@ -1,6 +1,6 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { ref, watch } from 'vue';
+import { onMounted, reactive, ref, watch } from 'vue';
 import { RouterLink } from 'vue-router';
 
 import 'swiper/css';
@@ -21,6 +21,7 @@ const cart = useCartStore();
 const currentSlilde = ref(0);
 const swiperRef = ref(null);
 const pagination = ref(null);
+let currentProduct = reactive({ product: null });
 const count = ref(props.count || 1);
 
 const setSwiperRef = swiper => {
@@ -45,6 +46,12 @@ const handleChangeCount = type => {
 
 watch(currentSlilde, () => {
 	swiperRef.value.slideTo(currentSlilde.value);
+});
+onMounted(() => {
+	const filteredProduct = cart.cartProducts.filter(product => {
+		return product.id === props.id;
+	});
+	currentProduct.product = filteredProduct[0];
 });
 </script>
 
@@ -90,7 +97,7 @@ watch(currentSlilde, () => {
 			:price="price"
 			:img="imgs[0]"
 			:url="url"
-			:count="count"
+			:count="currentProduct.product ? currentProduct.product.count : count"
 			:changeCount="handleChangeCount"
 		/>
 	</div>
