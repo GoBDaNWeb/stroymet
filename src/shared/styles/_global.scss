@@ -1,0 +1,47 @@
+.container {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 100%;
+}
+
+body {
+	background: var(--white-color);
+	font-family: 'Vremena Grotesk', sans-serif;
+	font-optical-sizing: auto;
+}
+.ymaps-2-1-79-gotoymaps {
+	display: none !important;
+}
+.ymaps-2-1-79-gototech {
+	display: none !important;
+}
+.ymaps-2-1-79-copyright {
+	display: none !important;
+}
+.ymaps-2-1-79-gototaxi {
+	display: none !important;
+}
+.swiper-button-disabled {
+	opacity: 0;
+}
+.navigation {
+	button {
+		transition: var(--trs-300);
+	}
+}
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.swiper-pagination-bullet {
+		border-radius: 0;
+		background: var(--light-gray-color);
+		opacity: 1;
+	}
+	.swiper-pagination-bullet-active {
+		background: var(--blue-color);
+	}
+}

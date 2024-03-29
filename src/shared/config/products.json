@@ -1,0 +1,58 @@
+[
+	{
+		"id": "01",
+		"url": "/product/01",
+		"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+		"price": 774,
+		"text": "Уголок крепежный анкерный"
+	},
+	{
+		"id": "02",
+		"url": "/product/02",
+		"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+		"price": 774,
+		"text": "Уголок крепежный анкерный"
+	},
+	{
+		"id": "03",
+		"url": "/product/03",
+		"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+		"price": 774,
+		"text": "Уголок крепежный анкерный"
+	},
+	{
+		"id": "04",
+		"url": "/product/04",
+		"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+		"price": 774,
+		"text": "Уголок крепежный анкерный"
+	},
+	{
+		"id": "05",
+		"url": "/product/05",
+		"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+		"price": 774,
+		"text": "Уголок крепежный анкерный"
+	},
+	{
+		"id": "06",
+		"url": "/product/06",
+		"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+		"price": 774,
+		"text": "Уголок крепежный анкерный"
+	},
+	{
+		"id": "07",
+		"url": "/product/07",
+		"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+		"price": 774,
+		"text": "Уголок крепежный анкерный"
+	},
+	{
+		"id": "08",
+		"url": "/product/08",
+		"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+		"price": 774,
+		"text": "Уголок крепежный анкерный"
+	}
+]

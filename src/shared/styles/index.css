@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Vremena Grotesk";
+  src: url("/fonts/VremenaGrotesk.eot");
+  src: local("VremenaGrotesk"), url("/fonts/VremenaGrotesk.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vremena Grotesk";
+  src: url("/fonts/VremenaGroteskMedium.eot");
+  src: local("VremenaGroteskMedium"), url("/fonts/VremenaGroteskMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+:root {
+  --gray-color: #454a55;
+  --gray-back-color: #949fb1;
+  --light-gray-color: #d7e3e9;
+  --hover-color: #ef921f;
+  --bg-color: #e6e3dd;
+  --white-color: #fff;
+  --green-color: #5ecf84;
+  --blue-color: #144ba1;
+  --border-color: rgba(255, 255, 255, 0.15);
+  --trs-300: 300ms ease;
+  --trs-600: 600ms ease;
+}
+
+html,
+body,
+#root,
+.app {
+  position: relative;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: "Vremena Grotesk", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a6b2c3;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-corner {
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+}
+
+#app {
+  overflow: hidden;
+}
+
+body {
+  background: var(--white-color);
+  font-family: "Vremena Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.ymaps-2-1-79-gotoymaps {
+  display: none !important;
+}
+
+.ymaps-2-1-79-gototech {
+  display: none !important;
+}
+
+.ymaps-2-1-79-copyright {
+  display: none !important;
+}
+
+.ymaps-2-1-79-gototaxi {
+  display: none !important;
+}
+
+.input:-moz-placeholder-shown {
+  text-transform: uppercase;
+}
+
+.input:placeholder-shown {
+  text-transform: uppercase;
+}
+
+.input {
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--text-color);
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */
