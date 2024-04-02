@@ -1,12 +1,13 @@
-import "./shared/styles/index.scss";
-import { createApp } from "vue";
-import { createPinia } from "pinia";
+import App from './app/App.vue';
+import { createApp } from 'vue';
+import VueTheMask from 'vue-the-mask';
 
-import VueTheMask from "vue-the-mask";
-import App from "./app/App.vue";
-import router from "./app/router";
-import { useRoutertore } from "@/entities/router-store";
-import vSelect from 'vue-select'
+import { createPinia } from 'pinia';
+
+import { useRoutertore } from '@/entities/router-store';
+
+import router from './app/router';
+import './shared/styles/index.scss';
 
 const app = createApp(App);
 
@@ -17,6 +18,6 @@ app.use(router);
 const routeStore = useRoutertore();
 
 router.beforeEach(async (to, from) => {
-  routeStore.setRoute(from.path);
+	routeStore.setRoute(from.path);
 });
-app.mount("#app");
+app.mount('#app');
