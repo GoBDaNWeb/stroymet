@@ -165,6 +165,7 @@ const handleSelectColor = index => {
 			}
 			.selectors {
 				margin-top: 35px;
+
 				h5 {
 					font-weight: 500;
 					color: var(--gray-color);
@@ -172,8 +173,18 @@ const handleSelectColor = index => {
 					line-height: 17px;
 					margin-bottom: 20px;
 					text-transform: uppercase;
+					@media (max-width: $tab) {
+						font-size: 11px;
+						line-height: 14px;
+					}
 				}
 				.select-row {
+					@media (max-width: $tab) {
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						gap: 20px;
+						margin-bottom: 15px;
+					}
 				}
 				.select-wrapper {
 					display: flex;
@@ -181,6 +192,9 @@ const handleSelectColor = index => {
 					gap: 10px;
 					margin-top: 20px;
 					position: relative;
+					@media (max-width: $tab) {
+						margin-top: 0;
+					}
 					&:nth-child(1) {
 						z-index: 5;
 					}
@@ -214,6 +228,9 @@ const handleSelectColor = index => {
 					display: grid;
 					grid-template-columns: repeat(6, 1fr);
 					gap: 20px;
+					@media (max-width: $tab) {
+						grid-template-columns: repeat(5, 1fr);
+					}
 					.color-item.active {
 						.color-wrapper {
 							border-color: var(--blue-color);

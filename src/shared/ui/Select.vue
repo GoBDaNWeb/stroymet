@@ -48,6 +48,8 @@ const handleSelectValue = index => {
 </template>
 
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .selector.active {
 	button {
 		span {
@@ -77,7 +79,9 @@ const handleSelectValue = index => {
 	background: var(--gray-bg-color);
 	position: relative;
 	z-index: 100;
-
+	@media (max-width: $tab) {
+		min-width: 100%;
+	}
 	.selector-btn {
 		padding: 0;
 		position: relative;
