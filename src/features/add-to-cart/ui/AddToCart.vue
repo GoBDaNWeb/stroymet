@@ -56,15 +56,24 @@ const isInCart = () => {
 </template>
 
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .add-to-cart {
 	.total {
 		color: var(--gray-color);
 		font-size: 24px;
 		line-height: 31px;
 		font-weight: 400;
+		@media (max-width: $tab) {
+			font-size: 20px;
+			line-height: 26px;
+		}
 	}
 	.buttons {
 		margin-top: 51px;
+		@media (max-width: $tab) {
+			margin-top: 25px;
+		}
 		.counter {
 			display: flex;
 			align-items: center;

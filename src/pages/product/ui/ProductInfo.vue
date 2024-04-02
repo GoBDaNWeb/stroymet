@@ -78,6 +78,8 @@ const handleChangeCount = type => {
 	</div>
 </template>
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .product-info {
 	h1 {
 		color: var(--gray-color);
@@ -85,12 +87,24 @@ const handleChangeCount = type => {
 		font-weight: 400;
 		font-size: 40px;
 		line-height: 40px;
+		@media (max-width: $tab) {
+			font-size: 30px;
+			line-height: 30px;
+		}
 	}
 	.product-info-content {
 		margin-top: 50px;
 		display: grid;
 		grid-template-columns: 1fr 0.6fr 0.4fr;
 		gap: 50px;
+		@media (max-width: $desktop-sm) {
+			gap: 20px;
+		}
+		@media (max-width: $tab) {
+			grid-template-columns: 1fr;
+			margin-top: 30px;
+			gap: 30px;
+		}
 		.product-main-info {
 			h6 {
 				color: var(--gray-back-color);
@@ -100,6 +114,10 @@ const handleChangeCount = type => {
 				display: flex;
 				align-items: center;
 				gap: 15px;
+				@media (max-width: $tab) {
+					font-size: 11px;
+					line-height: 14px;
+				}
 				span {
 					color: var(--blue-color);
 				}
@@ -109,6 +127,9 @@ const handleChangeCount = type => {
 				flex-direction: column;
 				gap: 15px;
 				margin-top: 35px;
+				@media (max-width: $tab) {
+					margin-top: 20px;
+				}
 				li {
 					display: flex;
 					align-items: baseline;
@@ -116,6 +137,10 @@ const handleChangeCount = type => {
 						font-size: 16px;
 						line-height: 20px;
 						white-space: nowrap;
+						@media (max-width: $tab) {
+							font-size: 14px;
+							line-height: 18px;
+						}
 					}
 					.line {
 						width: 100%;
@@ -128,6 +153,10 @@ const handleChangeCount = type => {
 						font-size: 16px;
 						line-height: 20px;
 						white-space: nowrap;
+						@media (max-width: $tab) {
+							font-size: 14px;
+							line-height: 18px;
+						}
 					}
 				}
 			}

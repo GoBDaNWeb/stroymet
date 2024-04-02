@@ -33,18 +33,28 @@ import aboutImg from '/images/about/swiper1/1.jpg';
 </template>
 
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .about-main {
 	margin-top: 103px;
 	display: grid;
 	align-items: flex-start;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 50px;
+	@media (max-width: $tab) {
+		grid-template-columns: 1fr;
+	}
 	.about-item {
 		h5 {
 			color: var(--blue-color);
 			font-weight: 400;
 			font-size: 20px;
 			line-height: 22px;
+			text-transform: uppercase;
+			@media (max-width: $tab) {
+				font-size: 16px;
+				line-height: 19px;
+			}
 		}
 		.about-item-content {
 			margin-top: 50px;
@@ -52,14 +62,28 @@ import aboutImg from '/images/about/swiper1/1.jpg';
 			gap: 30px;
 			grid-template-columns: repeat(2, 1fr);
 			align-items: flex-start;
+			@media (max-width: $tab) {
+				grid-template-columns: 1fr;
+			}
 			.image-wrapper {
 				position: relative;
 				padding-bottom: 100%;
+				@media (max-width: $tab) {
+					padding-bottom: 50%;
+				}
+				@media (max-width: $mob) {
+					padding-bottom: 0;
+					width: 207px;
+					height: 163px;
+				}
 				img {
 					position: absolute;
 					width: 100%;
 					height: 100%;
 					object-fit: contain;
+					@media (max-width: $mob) {
+						object-fit: cover;
+					}
 				}
 			}
 			p {
@@ -67,6 +91,10 @@ import aboutImg from '/images/about/swiper1/1.jpg';
 				font-weight: 400;
 				font-size: 18px;
 				line-height: 23px;
+				@media (max-width: $tab) {
+					font-size: 16px;
+					line-height: 20px;
+				}
 			}
 		}
 	}

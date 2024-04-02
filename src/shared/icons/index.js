@@ -10,6 +10,7 @@ import DoubleFileIcon from './DoubleFileIcon.vue';
 import DownloadIcon from './DownloadIcon.vue';
 import GostIcon from './GostIcon.vue';
 import LogoIcon from './LogoIcon.vue';
+import LogoMob from './LogoMob.vue';
 import MinusIcon from './MinusIcon.vue';
 import ParadigmaIcon from './ParadigmaIcon.vue';
 import PlusIcon from './PlusIcon.vue';
@@ -37,5 +38,6 @@ export {
 	RemoveIcon,
 	ArrowTopIcon,
 	ArrowBottomIcon,
-	DoubleFileIcon
+	DoubleFileIcon,
+	LogoMob
 };

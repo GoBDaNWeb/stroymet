@@ -2,13 +2,14 @@
 import { onMounted, ref, watch } from 'vue';
 import { RouterLink, useRoute } from 'vue-router';
 
-import { CartIcon, LogoIcon, WhatsappIcon } from '@/shared/icons';
+import { useMenuStore } from '@/entities/menu-store';
+
+import { links } from '@/shared/config';
+import { CartIcon, LogoIcon, LogoMob, WhatsappIcon } from '@/shared/icons';
 import { Button } from '@/shared/ui';
 
-import { links } from '../config';
-
+const menu = useMenuStore();
 const route = useRoute();
-console.log(route);
 const active = ref(false);
 const conditionHeader = route.path !== '/';
 const controlNavbar = () => {
@@ -43,10 +44,16 @@ onMounted(() => {
 
 <template>
 	<header class="header" :class="{ active: active }">
+		<button @click="menu.handleOpenMenu" class="burger">
+			<span></span>
+		</button>
 		<div class="container">
 			<div class="header-inner">
 				<RouterLink to="/" class="logo">
 					<LogoIcon />
+				</RouterLink>
+				<RouterLink to="/" class="logo-mob">
+					<LogoMob />
 				</RouterLink>
 				<nav class="navigation">
 					<RouterLink :to="link.url" v-for="(link, index) in links" :key="index">
@@ -82,6 +89,8 @@ onMounted(() => {
 }
 </style>
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .header.active {
 	background: var(--white-color);
 	border-color: var(--light-gray-color);
@@ -123,20 +132,86 @@ onMounted(() => {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@media (max-width: $desktop-sm) {
+			min-width: 50px;
+			max-width: 50px;
+			max-height: 50px;
+			min-height: 50px;
+		}
+	}
+	.burger {
+		width: 50px;
+		height: 50px;
+		min-width: 50px;
+		min-height: 50px;
+		background: var(--gray-back-color);
+		display: none;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		@media (max-width: $desktop-sm) {
+			display: flex;
+		}
+		span {
+			width: 20px;
+			height: 1px;
+			background: var(--white-color);
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			width: 20px;
+			height: 1px;
+			background: var(--white-color);
+			top: 20px;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			width: 20px;
+			height: 1px;
+			background: var(--white-color);
+			bottom: 20px;
+		}
 	}
 	.header-inner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		height: 100%;
+
+		.logo-mob {
+			display: none;
+			padding: 0 15px 0 0;
+			border-right: 1px solid var(--border-color);
+			height: 100%;
+			align-items: center;
+			@media (max-width: $tab) {
+				display: flex;
+			}
+		}
 		.logo {
 			padding: 12px 50px 12px 0;
 			border-right: 1px solid var(--border-color);
+			svg {
+				width: 100%;
+				height: 100%;
+			}
+			@media (max-width: $desktop-sm) {
+				height: 40px;
+				padding: 0 50px 0 0;
+			}
+			@media (max-width: $tab) {
+				display: none;
+			}
 		}
 		.navigation {
 			display: flex;
 			align-items: center;
 			gap: 50px;
+			@media (max-width: $desktop-sm) {
+				display: none;
+			}
 			a {
 				font-weight: 400;
 				font-size: 14px;
@@ -154,18 +229,37 @@ onMounted(() => {
 			align-items: center;
 			justify-content: space-between;
 			width: 25%;
+			@media (max-width: $desktop-sm) {
+				width: 300px;
+				border-left: none;
+				padding: 10px 0 10px 0;
+			}
+			@media (max-width: $tab) {
+				width: auto;
+				gap: 10px;
+			}
 			a {
 				display: flex;
 				align-items: center;
 				gap: 10px;
 				color: var(--white-color);
 				transition: var(--trs-300);
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 14px;
+				@media (max-width: $tab) {
+					font-size: 14px;
+					line-height: 18px;
+				}
 				p {
 					color: var(--green-color);
 					font-weight: 400;
 					font-size: 11px;
 					line-height: 10px;
 					text-transform: uppercase;
+					@media (max-width: $tab) {
+						display: none;
+					}
 				}
 			}
 		}

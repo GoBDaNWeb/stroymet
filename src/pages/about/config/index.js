@@ -19,3 +19,8 @@ export const documentsList = [
 	{ id: '4', title: 'заголовок лицензии или сертификата на продукцию' },
 	{ id: '5', title: 'заголовок лицензии или сертификата на продукцию' }
 ];
+
+export const breadcrumbsList = [
+	{ url: '/', title: 'Главная' },
+	{ url: '/about', title: 'О копании' }
+];

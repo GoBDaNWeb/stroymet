@@ -4,16 +4,17 @@ import { onMounted, ref } from 'vue';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import { ArrowBottomIcon, ArrowLeftIcon, ArrowRightIcon, DoubleFileIcon } from '@/shared/icons';
 
 const props = defineProps(['documentsList']);
-console.log(props);
-const modules = ref([Navigation]);
+const modules = ref([Navigation, Pagination]);
 
 const prev = ref(null);
 const next = ref(null);
+const pagination = ref(null);
 </script>
 
 <template>
@@ -33,7 +34,19 @@ const next = ref(null);
 				prevEl: prev,
 				nextEl: next
 			}"
+			:pagination="{
+				el: pagination,
+				clickable: true
+			}"
 			:modules="modules"
+			:breakpoints="{
+				0: {
+					slidesPerView: 1.2
+				},
+				767: {
+					slidesPerView: 2
+				}
+			}"
 		>
 			<SwiperSlide v-for="document in documentsList" :key="document.id">
 				<DoubleFileIcon />
@@ -43,6 +56,7 @@ const next = ref(null);
 				</div>
 			</SwiperSlide>
 		</Swiper>
+		<div ref="pagination" class="pagination"></div>
 	</div>
 </template>
 
@@ -64,8 +78,14 @@ const next = ref(null);
 }
 </style>
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .documents {
 	margin-top: 116px;
+	@media (max-width: $tab) {
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
 	.top {
 		display: flex;
 		justify-content: space-between;
@@ -75,11 +95,18 @@ const next = ref(null);
 			font-weight: 400;
 			font-size: 50px;
 			line-height: 50px;
+			@media (max-width: $tab) {
+				font-size: 24px;
+				line-height: 26px;
+			}
 		}
 		.navigation {
 			display: flex;
 			align-items: center;
 			gap: 1px;
+			@media (max-width: $tab) {
+				display: none;
+			}
 		}
 	}
 	.documents-swiper {
@@ -93,6 +120,9 @@ const next = ref(null);
 			align-items: center;
 			gap: 30px;
 			height: auto;
+			@media (max-width: $tab) {
+				padding: 30px 20px;
+			}
 			.content {
 				display: flex;
 				flex-direction: column;
@@ -103,6 +133,10 @@ const next = ref(null);
 					font-size: 20px;
 					line-height: 22px;
 					text-transform: uppercase;
+					@media (max-width: $tab) {
+						font-size: 16px;
+						line-height: 19px;
+					}
 				}
 				button {
 					color: var(--blue-color);
@@ -112,8 +146,21 @@ const next = ref(null);
 					display: flex;
 					align-items: center;
 					gap: 10px;
+					@media (max-width: $tab) {
+						font-size: 14px;
+						line-height: 14px;
+					}
 				}
 			}
+		}
+	}
+	.pagination {
+		display: none;
+		@media (max-width: $tab) {
+			display: flex;
+			justify-content: flex-start;
+			margin-top: 10px;
+			padding-left: 20px;
 		}
 	}
 }

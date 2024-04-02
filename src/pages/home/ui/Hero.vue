@@ -1,37 +1,88 @@
+<script setup>
+import { Pin } from '@/entities/pin';
+</script>
+
 <template>
-  <div class="hero">
-    <img src="/images/home/hero.jpg" alt="" />
-    <div class="container">
-      <div class="hero-inner">
-        <h1>кровельные <br />и фасадные материалы <br />от производителя</h1>
-      </div>
-    </div>
-  </div>
+	<div class="hero">
+		<!-- <img src="/images/home/hero.jpg" alt="" /> -->
+		<div class="pins">
+			<Pin direction="left" />
+			<Pin direction="right" />
+			<Pin direction="right" />
+		</div>
+		<div class="container">
+			<div class="hero-inner">
+				<h1>кровельные <br />и фасадные материалы <br />от производителя</h1>
+			</div>
+		</div>
+	</div>
 </template>
 
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .hero {
-  height: 100vh;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .hero-inner {
-    position: relative;
-    h1 {
-      font-weight: 400;
-      font-size: 50px;
-      line-height: 50px;
-      z-index: 2;
-      text-transform: uppercase;
-      color: var(--white-color);
-      position: absolute;
-      bottom: 50px;
-      left: 0;
-      text-shadow: 3px 3px 4px #000;
-      letter-spacing: -1px;
-    }
-  }
+	height: 100vh;
+	position: relative;
+	background-image: url('/images/home/hero.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.pins {
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		& > div:nth-child(1) {
+			position: absolute;
+			top: 27%;
+			left: 10%;
+		}
+		& > div:nth-child(2) {
+			position: absolute;
+			top: 37%;
+			left: 50%;
+		}
+		& > div:nth-child(3) {
+			position: absolute;
+			top: 32%;
+			left: 67%;
+		}
+	}
+	.container {
+		height: 100%;
+	}
+	.hero-inner {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+		pointer-events: none;
+		h1 {
+			font-weight: 400;
+			font-size: 50px;
+			line-height: 50px;
+			z-index: 2;
+			text-transform: uppercase;
+			color: var(--white-color);
+			position: absolute;
+			bottom: 50px;
+			left: 0;
+			text-shadow: 3px 3px 4px #000;
+			letter-spacing: -1px;
+			@media (max-width: $tab) {
+				font-size: 30px;
+				line-height: 30px;
+				bottom: 30px;
+			}
+		}
+	}
 }
 </style>

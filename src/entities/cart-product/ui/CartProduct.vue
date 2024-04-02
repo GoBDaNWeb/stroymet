@@ -55,6 +55,8 @@ const handleRemoveProduct = () => {
 </template>
 
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .cart-product {
 	display: grid;
 	grid-template-columns: 0.2fr 1fr 0.2fr;
@@ -66,6 +68,9 @@ const handleRemoveProduct = () => {
 	padding-bottom: 20px;
 	&:last-child {
 		border-bottom: 1px solid var(--light-gray-color);
+	}
+	@media (max-width: $tab) {
+		grid-template-columns: 0.4fr 1fr 0fr;
 	}
 	.image-wrapper {
 		position: relative;
@@ -83,6 +88,10 @@ const handleRemoveProduct = () => {
 			font-size: 18px;
 			line-height: 20px;
 			color: var(--gray-color);
+			@media (max-width: $tab) {
+				font-size: 14px;
+				line-height: 16px;
+			}
 		}
 		.counter-wrapper {
 			margin-top: 30px;
@@ -90,11 +99,23 @@ const handleRemoveProduct = () => {
 			grid-template-columns: repeat(3, 1fr);
 			align-items: center;
 			justify-content: space-between;
+			@media (max-width: $tab) {
+				grid-template-columns: 1fr;
+				justify-content: center;
+				gap: 15px;
+			}
 			span {
 				color: var(--gray-color);
 				font-size: 18px;
 				line-height: 18px;
 				font-weight: 400;
+				text-align: center;
+				display: block;
+				@media (max-width: $tab) {
+					font-size: 14px;
+					line-height: 14px;
+					text-align: left;
+				}
 			}
 			.counter {
 				display: flex;
@@ -102,6 +123,7 @@ const handleRemoveProduct = () => {
 				justify-content: space-between;
 				max-width: 170px;
 				width: 100%;
+
 				span {
 					font-weight: 400;
 					font-size: 16px;

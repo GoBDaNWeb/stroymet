@@ -115,6 +115,8 @@ onMounted(() => {
 }
 </style>
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .product-item {
 	position: relative;
 	.swiper-product-wrapper {
@@ -140,6 +142,9 @@ onMounted(() => {
 	.product-swiper {
 		width: 100%;
 		max-width: 225px;
+		@media (max-width: $tab) {
+			max-width: 150px;
+		}
 	}
 
 	.image-wrapper {
@@ -161,6 +166,10 @@ onMounted(() => {
 		text-transform: uppercase;
 		display: block;
 		margin-top: 20px;
+		@media (max-width: $tab) {
+			font-size: 16px;
+			line-height: 16px;
+		}
 	}
 	p {
 		font-weight: 400;
@@ -168,6 +177,11 @@ onMounted(() => {
 		line-height: 20px;
 		color: var(--gray-color);
 		margin-top: 20px;
+		@media (max-width: $tab) {
+			font-size: 14px;
+			line-height: 16px;
+			margin-top: 10px;
+		}
 	}
 }
 </style>

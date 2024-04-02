@@ -9,6 +9,8 @@ const props = defineProps(['title', 'variable', 'click', 'type', 'disabled']);
 </template>
 
 <style lang="scss">
+@import '@/shared/styles/vars';
+
 button:disabled {
 	pointer-events: none;
 }
@@ -39,6 +41,10 @@ button.primary {
 	height: 40px;
 	width: 100%;
 	text-transform: uppercase;
+	@media (max-width: $tab) {
+		font-size: 14px;
+		line-height: 12px;
+	}
 }
 button.count {
 	width: 40px;

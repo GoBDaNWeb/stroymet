@@ -31,8 +31,9 @@ defineProps(['title', 'productList', 'haveBtn']);
 </template>
 
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .products {
-	padding: 0 30px;
 	.products-top {
 		display: flex;
 		justify-content: space-between;
@@ -43,12 +44,31 @@ defineProps(['title', 'productList', 'haveBtn']);
 			font-weight: 400;
 			line-height: 50px;
 			text-transform: uppercase;
+			@media (max-width: $tab) {
+				font-size: 30px;
+				line-height: 30px;
+			}
 		}
 	}
 	.products-content {
 		display: grid;
+		padding: 0 30px;
+
 		grid-template-columns: repeat(5, 1fr);
 		gap: 53px;
+		@media (max-width: $desktop-md) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+		@media (max-width: $desktop-sm) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@media (max-width: $tab) {
+			gap: 20px;
+			padding: 0 20px;
+		}
+		@media (max-width: $tab-sm) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 	.button-wrapper {
 		display: flex;

@@ -1,13 +1,23 @@
 <script setup>
-let center = [55.738819, 37.540686];
+const props = defineProps(['coords', 'id']);
+let center = props.coords;
 
 function init() {
-	let map = new ymaps.Map('map', {
+	let map = new ymaps.Map(props.id, {
 		center: center,
 		zoom: 15
 	});
 
-	let placemark = new ymaps.Placemark(center, {}, {});
+	let placemark = new ymaps.Placemark(
+		center,
+		{},
+		{
+			iconLayout: 'default#image',
+			iconImageHref: '/images/pin.svg',
+			iconImageSize: [50, 40],
+			iconImageOffset: [-20, -37]
+		}
+	);
 
 	map.controls.remove('geolocationControl'); // удаляем геолокацию
 	map.controls.remove('searchControl'); // удаляем поиск
@@ -25,7 +35,7 @@ ymaps.ready(init);
 </script>
 
 <template>
-	<div id="map" class="map"></div>
+	<div :id="id" class="map"></div>
 </template>
 
 <style lang="scss" scoped>
@@ -35,6 +45,5 @@ ymaps.ready(init);
 	width: 100%;
 	height: 100%;
 	background-color: var(--bg-color);
-	filter: grayscale(1);
 }
 </style>

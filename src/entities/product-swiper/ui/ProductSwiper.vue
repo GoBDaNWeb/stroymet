@@ -34,6 +34,17 @@ const setThumbsSwiper = swiper => {
 					prevEl: prev,
 					nextEl: next
 				}"
+				:breakpoints="{
+					0: {
+						direction: 'horizontal',
+						spaceBetween: 5
+					},
+
+					1024: {
+						direction: 'vertical',
+						spaceBetween: 10
+					}
+				}"
 				:modules="modules"
 				class="thumbs-product"
 			>
@@ -65,16 +76,34 @@ const setThumbsSwiper = swiper => {
 </template>
 
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .product-swiper-wrapper {
 	display: flex;
 	gap: 30px;
 	max-height: 405px;
 	width: 100%;
 	max-width: 655px;
+	@media (max-width: $desktop-sm) {
+		max-width: 455px;
+		max-height: 255px;
+	}
+	@media (max-width: $tab) {
+		flex-direction: column-reverse;
+		max-height: 600px;
+		max-width: 94vw;
+		gap: 5px;
+	}
+	@media (max-width: $tab-sm) {
+		max-width: 92vw;
+	}
 	.product-thumbs-wrapper {
 		width: 100%;
 		max-width: 85px;
 		position: relative;
+		@media (max-width: $tab) {
+			max-width: 100%;
+		}
 		.thumbs-product {
 			width: 100%;
 			height: 100%;
@@ -113,6 +142,9 @@ const setThumbsSwiper = swiper => {
 			z-index: 2;
 			width: 100%;
 			pointer-events: none;
+			@media (max-width: $tab) {
+				display: none;
+			}
 			button.swiper-button-disabled {
 				opacity: 0;
 			}
@@ -133,7 +165,9 @@ const setThumbsSwiper = swiper => {
 		width: 100%;
 		border: 1px solid var(--light-gray-color);
 		padding: 15px;
-
+		@media (max-width: $tab) {
+			height: 100%;
+		}
 		.swiper-slide {
 			.image-wrapper {
 				padding-bottom: 75%;

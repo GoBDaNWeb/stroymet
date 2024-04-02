@@ -93,23 +93,36 @@ import { Button, Input } from '@/shared/ui';
 }
 </style>
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .footer {
 	background: var(--blue-color);
 	padding-top: 80px;
 	.form-wrapper {
 		border-bottom: 1px solid var(--border-color);
 		padding-bottom: 80px;
+		@media (max-width: $tab) {
+			padding-bottom: 40px;
+		}
 		.form {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			gap: 30px;
 			align-items: center;
+			@media (max-width: $tab) {
+				gap: 20px;
+				grid-template-columns: repeat(1, 1fr);
+			}
 			h4 {
 				color: var(--white-color);
 				font-weight: 400;
 				font-size: 50px;
 				line-height: 50px;
 				text-transform: uppercase;
+				@media (max-width: $tab) {
+					font-size: 30px;
+					line-height: 30px;
+				}
 			}
 			button {
 				height: 62px;
@@ -126,9 +139,19 @@ import { Button, Input } from '@/shared/ui';
 			grid-template-columns: repeat(4, 1fr);
 			gap: 30px;
 			align-items: center;
+			@media (max-width: $tab) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+			@media (max-width: $tab-sm) {
+				grid-template-columns: repeat(1, 1fr);
+				gap: 40px;
+			}
 			.image-wrapper {
 				position: relative;
 				padding-bottom: 100%;
+				@media (max-width: $tab) {
+					display: none;
+				}
 				img {
 					position: absolute;
 					width: 100%;
@@ -143,10 +166,19 @@ import { Button, Input } from '@/shared/ui';
 				justify-content: flex-start;
 				height: 100%;
 				max-height: 280px;
+				@media (max-width: $desktop-sm) {
+					max-height: 380px;
+				}
+				@media (max-width: $tab-sm) {
+					gap: 20px;
+				}
 				&:last-child {
 					ul {
 						justify-content: flex-start;
 						margin-top: 89px;
+						@media (max-width: $tab-sm) {
+							margin-top: 0;
+						}
 					}
 				}
 				h5 {
@@ -155,6 +187,13 @@ import { Button, Input } from '@/shared/ui';
 					font-size: 28px;
 					line-height: 29px;
 					text-transform: uppercase;
+					@media (max-width: $tab) {
+						font-size: 20px;
+						line-height: 21px;
+					}
+					@media (max-width: $tab-sm) {
+						margin-bottom: 5px;
+					}
 				}
 				h6 {
 					color: var(--white-color);
@@ -162,6 +201,10 @@ import { Button, Input } from '@/shared/ui';
 					font-size: 20px;
 					line-height: 20px;
 					text-transform: uppercase;
+					@media (max-width: $tab) {
+						font-size: 14px;
+						line-height: 14px;
+					}
 				}
 				ul {
 					display: flex;
@@ -177,6 +220,10 @@ import { Button, Input } from '@/shared/ui';
 							line-height: 19px;
 							font-weight: 400;
 							color: var(--white-color);
+							@media (max-width: $tab) {
+								font-size: 14px;
+								line-height: 18px;
+							}
 						}
 					}
 				}
@@ -191,18 +238,29 @@ import { Button, Input } from '@/shared/ui';
 					font-size: 14px;
 					text-transform: uppercase;
 					gap: 10px;
+					@media (max-width: $tab) {
+						height: 45px;
+						font-size: 12px;
+						line-height: 12px;
+					}
 				}
 			}
 		}
 	}
 	.bottom {
 		display: flex;
-
+		@media (max-width: $tab-sm) {
+			flex-direction: column;
+			padding-bottom: 20px;
+		}
 		.logo {
 			border-right: 1px solid var(--border-color);
 			padding-top: 25px;
 			padding-bottom: 25px;
 			padding-right: 40px;
+			@media (max-width: $tab) {
+				display: none;
+			}
 		}
 		.policy {
 			flex: 1;
@@ -215,18 +273,37 @@ import { Button, Input } from '@/shared/ui';
 			border-right: 1px solid var(--border-color);
 			padding-top: 25px;
 			padding-bottom: 25px;
+			@media (max-width: $tab) {
+				padding-left: 0;
+			}
+			@media (max-width: $tab-sm) {
+				border-right: none;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 10px;
+				padding: 0;
+				padding-top: 20px;
+				padding-bottom: 10px;
+			}
 			a,
 			p {
 				color: var(--white-color);
 				font-size: 14px;
 				line-height: 19px;
 				font-weight: 400;
+				@media (max-width: $tab) {
+					font-size: 11px;
+					line-height: 14px;
+				}
 			}
 		}
 		.paradigma {
 			padding-left: 50px;
 			display: flex;
 			align-items: center;
+			@media (max-width: $tab-sm) {
+				padding: 0;
+			}
 			a {
 				display: flex;
 				align-items: center;
@@ -235,6 +312,15 @@ import { Button, Input } from '@/shared/ui';
 				font-size: 14px;
 				line-height: 19px;
 				color: var(--white-color);
+
+				@media (max-width: $tab) {
+					font-size: 11px;
+					line-height: 14px;
+					svg {
+						width: 15px;
+						height: 15px;
+					}
+				}
 			}
 		}
 	}

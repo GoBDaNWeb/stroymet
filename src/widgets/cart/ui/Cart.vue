@@ -86,8 +86,13 @@ console.log(cart.getTotalPrice);
 }
 </style>
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .cart {
 	margin-bottom: 100px;
+	@media (max-width: $tab) {
+		margin-bottom: 80px;
+	}
 	h1 {
 		color: var(--gray-color);
 		font-weight: 400;
@@ -101,6 +106,13 @@ console.log(cart.getTotalPrice);
 		margin-top: 70px;
 		position: relative;
 		grid-template-columns: 1fr 0.4fr;
+		@media (max-width: $desktop-sm) {
+			gap: 50px;
+		}
+		@media (max-width: $tab) {
+			grid-template-columns: 1fr;
+			margin-top: 30px;
+		}
 		.cart-content {
 			.cart-alert {
 				margin-top: 47px;
@@ -131,6 +143,10 @@ console.log(cart.getTotalPrice);
 						line-height: 26px;
 						text-transform: uppercase;
 						white-space: nowrap;
+						@media (max-width: $tab) {
+							font-size: 20px;
+							line-height: 22px;
+						}
 					}
 					.line {
 						width: 100%;
@@ -145,6 +161,10 @@ console.log(cart.getTotalPrice);
 				.order-form {
 					margin-top: 50px;
 					margin-bottom: 55px;
+					@media (max-width: $tab) {
+						margin-top: 30px;
+						margin-bottom: 30px;
+					}
 					.inputs {
 						display: flex;
 						flex-direction: column;
@@ -156,6 +176,7 @@ console.log(cart.getTotalPrice);
 						input {
 							border-color: var(--light-gray-color);
 							height: 50px;
+							color: var(--gray-color);
 						}
 					}
 					p {
@@ -165,6 +186,10 @@ console.log(cart.getTotalPrice);
 						line-height: 15px;
 						font-weight: 400;
 						color: var(--light2-gray-color);
+						@media (max-width: $tab) {
+							font-size: 11px;
+							line-height: 14px;
+						}
 						a {
 							color: var(--blue-color);
 						}

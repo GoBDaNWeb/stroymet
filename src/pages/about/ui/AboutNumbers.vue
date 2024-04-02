@@ -30,11 +30,17 @@
 </template>
 
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .about-numbers {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 30px;
 	margin-top: 144px;
+	@media (max-width: $tab) {
+		grid-template-columns: 1fr;
+		margin-top: 80px;
+	}
 	.about-numbers-item {
 		h4 {
 			color: var(--gray-color);
@@ -42,6 +48,10 @@
 			font-size: 30px;
 			line-height: 33px;
 			text-transform: uppercase;
+			@media (max-width: $tab) {
+				font-size: 24px;
+				line-height: 26px;
+			}
 		}
 		.about-numbers-item-content {
 			margin-top: 60px;
@@ -49,6 +59,13 @@
 			grid-template-columns: repeat(2, 1fr);
 			column-gap: 30px;
 			align-items: flex-start;
+			@media (max-width: $desktop-sm) {
+				grid-template-columns: 1fr;
+			}
+			@media (max-width: $tab) {
+				gap: 0;
+				margin-top: 35px;
+			}
 			.number {
 				padding-top: 50px;
 				padding-bottom: 50px;
@@ -56,8 +73,16 @@
 				display: flex;
 				flex-direction: column;
 				gap: 20px;
+				@media (max-width: $tab) {
+					padding-top: 25px;
+					padding-bottom: 25px;
+					gap: 15px;
+				}
 				&:nth-child(3) {
 					border-bottom: 1px solid var(--light-gray-color);
+					@media (max-width: $tab) {
+						border-bottom: none;
+					}
 				}
 				&:nth-child(4) {
 					border-bottom: 1px solid var(--light-gray-color);
@@ -67,12 +92,21 @@
 					font-weight: 400;
 					font-size: 70px;
 					line-height: 66px;
+					@media (max-width: $tab) {
+						font-size: 40px;
+						line-height: 38px;
+					}
 				}
 				p {
 					color: var(--gray-color);
 					font-weight: 400;
 					font-size: 20px;
 					line-height: 22px;
+					@media (max-width: $tab) {
+						font-size: 16px;
+
+						line-height: 19px;
+					}
 				}
 			}
 		}

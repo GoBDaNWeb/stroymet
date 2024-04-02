@@ -3,10 +3,12 @@ import { createRouter, createWebHistory } from 'vue-router';
 import { About } from '@/pages/about';
 import { Cart } from '@/pages/cart';
 import { Catalog } from '@/pages/catalog';
+import { Contacts } from '@/pages/contacts';
 import { Home } from '@/pages/home';
 import { NotFound } from '@/pages/not-found';
 import { Product } from '@/pages/product';
 import { Products } from '@/pages/products';
+import { Delivery } from '@/pages/delivery';
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,9 +30,19 @@ const router = createRouter({
 			component: About
 		},
 		{
+			path: '/delivery',
+			name: 'delivery',
+			component: Delivery
+		},
+		{
 			path: '/cart',
 			name: 'cart',
 			component: Cart
+		},
+		{
+			path: '/contacts',
+			name: 'contacts',
+			component: Contacts
 		},
 		{
 			path: '/catalog/:slug',

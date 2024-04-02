@@ -4,16 +4,18 @@ import { onMounted, ref } from 'vue';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import { ArrowLeftIcon, ArrowRightIcon } from '@/shared/icons';
 
 defineProps(['imgs']);
 
-const modules = ref([Navigation]);
+const modules = ref([Navigation, Pagination]);
 
 const prev = ref(null);
 const next = ref(null);
+const pagination = ref(null);
 </script>
 
 <template>
@@ -25,6 +27,10 @@ const next = ref(null);
 			:navigation="{
 				prevEl: prev,
 				nextEl: next
+			}"
+			:pagination="{
+				el: pagination,
+				clickable: true
 			}"
 			:modules="modules"
 		>
@@ -39,13 +45,25 @@ const next = ref(null);
 			<button ref="prev" class="nav"><ArrowLeftIcon /></button>
 			<button ref="next" class="nav"><ArrowRightIcon /></button>
 		</div>
+		<div ref="pagination" class="pagination"></div>
 	</div>
 </template>
 
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .about-main-swiper-wrapper {
 	position: relative;
 	max-width: 655px;
+	@media (max-width: $desktop-sm) {
+		max-width: 500px;
+	}
+	@media (max-width: $tab) {
+		max-width: 96vw;
+	}
+	@media (max-width: $tab-sm) {
+		max-width: 94vw;
+	}
 	.about-main-swiper {
 		.image-wrapper {
 			position: relative;
@@ -66,6 +84,17 @@ const next = ref(null);
 		align-items: center;
 		gap: 1px;
 		z-index: 2;
+		@media (max-width: $tab) {
+			display: none;
+		}
+	}
+	.pagination {
+		display: none;
+		@media (max-width: $tab) {
+			display: flex;
+			justify-content: flex-start;
+			margin-top: 10px;
+		}
 	}
 }
 </style>

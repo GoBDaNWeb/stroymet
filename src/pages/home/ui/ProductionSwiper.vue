@@ -4,16 +4,18 @@ import { onMounted, ref } from 'vue';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import { ArrowLeftIcon, ArrowRightIcon } from '@/shared/icons';
 
 defineProps(['imgs']);
 
-const modules = ref([Navigation]);
+const modules = ref([Navigation, Pagination]);
 
 const prev = ref(null);
 const next = ref(null);
+const pagination = ref(null);
 </script>
 
 <template>
@@ -35,7 +37,24 @@ const next = ref(null);
 				prevEl: prev,
 				nextEl: next
 			}"
+			:pagination="{
+				el: pagination,
+				clickable: true
+			}"
 			:modules="modules"
+			:breakpoints="{
+				0: {
+					slidesPerView: 1.2,
+					centeredSlides: false
+				},
+				767: {
+					slidesPerView: 2.2
+				},
+				1024: {
+					centeredSlides: true,
+					slidesPerView: 3.2
+				}
+			}"
 		>
 			<SwiperSlide v-for="(img, index) in imgs" :key="index">
 				<div class="image-wrapper">
@@ -44,15 +63,22 @@ const next = ref(null);
 				<p>{{ img.title }}</p>
 			</SwiperSlide>
 		</Swiper>
+		<div ref="pagination" class="pagination"></div>
 	</div>
 </template>
 
 <style lang="scss">
+@import '@/shared/styles/vars';
+
 .production-swiper {
 	.swiper-slide-active {
 		transform: scale(1.3);
 		z-index: 2;
 		transition: var(--trs-300);
+		@media (max-width: $tab) {
+			transform: scale(1);
+		}
+
 		p {
 			opacity: 1;
 		}
@@ -60,9 +86,14 @@ const next = ref(null);
 }
 </style>
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .production {
 	margin-top: 140px;
 	overflow: hidden;
+	@media (max-width: $tab) {
+		margin-top: 80px;
+	}
 	.top {
 		display: flex;
 		justify-content: space-between;
@@ -72,17 +103,37 @@ const next = ref(null);
 			font-weight: 400;
 			font-size: 50px;
 			line-height: 50px;
+			@media (max-width: $tab) {
+				font-size: 30px;
+				line-height: 30px;
+			}
 		}
 		.navigation {
 			display: flex;
 			align-items: center;
 			gap: 1px;
+			@media (max-width: $tab) {
+				display: none;
+			}
+		}
+	}
+	.pagination {
+		display: none;
+		@media (max-width: $tab) {
+			display: flex;
+			justify-content: flex-start;
+			padding-left: 20px;
 		}
 	}
 	.production-swiper {
 		margin-bottom: 100px;
 		overflow: visible;
 		margin-top: 90px;
+		@media (max-width: $tab) {
+			padding-left: 20px;
+			margin-top: 35px;
+			margin-bottom: 20px;
+		}
 		.swiper-slide-active {
 			p {
 				opacity: 1 !important;
@@ -100,11 +151,18 @@ const next = ref(null);
 				font-size: 14px;
 				line-height: 14px;
 				margin-top: 20px;
+				@media (max-width: $tab) {
+					font-size: 16px;
+					line-height: 16px;
+				}
 			}
 		}
 		.image-wrapper {
 			position: relative;
 			padding-bottom: 65%;
+			@media (max-width: $tab) {
+				padding-bottom: 75%;
+			}
 			img {
 				position: absolute;
 				width: 100%;

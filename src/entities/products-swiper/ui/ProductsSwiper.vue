@@ -4,7 +4,8 @@ import { onMounted, ref } from 'vue';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import { ProductItem } from '@/entities/product-item';
 
@@ -12,10 +13,11 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@/shared/icons';
 
 defineProps(['products']);
 
-const modules = ref([Navigation]);
+const modules = ref([Navigation, Pagination]);
 
 const prev = ref(null);
 const next = ref(null);
+const pagination = ref(null);
 </script>
 
 <template>
@@ -27,6 +29,7 @@ const next = ref(null);
 				<button ref="next" class="nav"><ArrowRightIcon /></button>
 			</div>
 		</div>
+
 		<Swiper
 			:slidesPerView="5"
 			:spaceBetween="53"
@@ -35,7 +38,27 @@ const next = ref(null);
 				prevEl: prev,
 				nextEl: next
 			}"
+			:pagination="{
+				el: pagination,
+				clickable: true
+			}"
 			:modules="modules"
+			:breakpoints="{
+				0: {
+					slidesPerView: 2,
+					spaceBetween: 20
+				},
+				767: {
+					slidesPerView: 3
+				},
+				1280: {
+					slidesPerView: 4,
+					spaceBetween: 50
+				},
+				1440: {
+					slidesPerView: 5
+				}
+			}"
 		>
 			<SwiperSlide v-for="product in products" :key="product.id">
 				<ProductItem
@@ -48,15 +71,24 @@ const next = ref(null);
 				/>
 			</SwiperSlide>
 		</Swiper>
+		<div ref="pagination" class="pagination"></div>
 	</div>
 </template>
 
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .products-swiper-wrapper {
 	margin-top: 100px;
 	overflow: hidden;
 	border-top: 1px solid var(--light-gray-color);
 	padding-top: 100px;
+	padding-right: 20px;
+	padding-left: 20px;
+	@media (max-width: $tab) {
+		padding-top: 80px;
+		margin-top: 80px;
+	}
 	.top {
 		display: flex;
 		justify-content: space-between;
@@ -66,16 +98,36 @@ const next = ref(null);
 			font-weight: 400;
 			font-size: 50px;
 			line-height: 50px;
+			@media (max-width: $tab) {
+				font-size: 24px;
+				line-height: 26px;
+			}
 		}
 		.navigation {
 			display: flex;
 			align-items: center;
 			gap: 1px;
+			@media (max-width: $tab) {
+				display: none;
+			}
+		}
+	}
+	.pagination {
+		display: none;
+		@media (max-width: $tab) {
+			display: flex;
+			justify-content: flex-start;
+			margin-top: 20px;
+			margin-bottom: 80px;
 		}
 	}
 	.products-swiper {
 		margin-bottom: 100px;
 		margin-top: 90px;
+		@media (max-width: $tab) {
+			margin-bottom: 20px;
+			margin-top: 35px;
+		}
 	}
 }
 </style>
