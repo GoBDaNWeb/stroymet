@@ -75,7 +75,7 @@ const pagination = ref(null);
 @import '@/shared/styles/vars';
 
 .reviews {
-	margin-top: 135px;
+	margin-top: 120px;
 	@media (max-width: $tab) {
 		margin-top: 80px;
 	}
