@@ -31,6 +31,10 @@ button.nav {
 	align-items: center;
 	justify-content: center;
 	background: var(--blue-color);
+	transition: var(--trs-300);
+	&:hover {
+		background: var(--blue-hover-color);
+	}
 }
 button.primary {
 	background: var(--blue-color);
@@ -41,6 +45,13 @@ button.primary {
 	height: 40px;
 	width: 100%;
 	text-transform: uppercase;
+	transition: var(--trs-300);
+	&:hover {
+		background: var(--blue-hover-color);
+	}
+	&:active {
+		box-shadow: var(--shadow-inset);
+	}
 	@media (max-width: $tab) {
 		font-size: 14px;
 		line-height: 12px;

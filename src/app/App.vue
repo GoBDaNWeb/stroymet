@@ -5,6 +5,7 @@ import { RouterView, useRoute } from 'vue-router';
 import { Footer } from '@/widgets/footer';
 import { Header } from '@/widgets/header';
 import { MobileMenu } from '@/widgets/mobile-menu';
+import { SuccessModal } from '@/widgets/success-modal';
 
 const router = useRoute();
 
@@ -22,4 +23,5 @@ watch(router, () => {
 	<MobileMenu />
 	<RouterView />
 	<Footer />
+	<SuccessModal />
 </template>

@@ -88,7 +88,7 @@ import aboutImg from '/images/about/swiper1/1.jpg';
 			}
 			p {
 				color: var(--gray-color);
-				font-weight: 400;
+				font-weight: 350;
 				font-size: 18px;
 				line-height: 23px;
 				@media (max-width: $tab) {

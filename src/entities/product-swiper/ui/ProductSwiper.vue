@@ -172,6 +172,9 @@ const setThumbsSwiper = swiper => {
 			.image-wrapper {
 				padding-bottom: 75%;
 				position: relative;
+				@media (max-width: $tab) {
+					padding-bottom: 50%;
+				}
 				img {
 					width: 100%;
 					height: 100%;

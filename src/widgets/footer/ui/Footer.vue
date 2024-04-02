@@ -1,16 +1,44 @@
 <script setup>
+import { ref, watch } from 'vue';
+
+import { useModalStore } from '@/entities/modal-store';
+
 import { DoubleArrowsIcon, LogoIcon, ParadigmaIcon } from '@/shared/icons';
 import { Button, Input } from '@/shared/ui';
+
+const modal = useModalStore();
+
+const name = ref('');
+const nameError = ref(false);
+const phone = ref('');
+const phoneError = ref(false);
+
+const handleSetError = () => {
+	name.value.length === 0 ? (nameError.value = true) : (nameError.value = false);
+	phone.value.length === 0 ? (phoneError.value = true) : (phoneError.value = false);
+	return;
+};
+
+const handleSuccessModal = () => {
+	if (!nameError.value && !phoneError.value) {
+		modal.handleOpenSuccessModal();
+	}
+};
+
+watch([name, phone], () => {
+	nameError.value = false;
+	phoneError.value = false;
+});
 </script>
 
 <template>
 	<footer class="footer">
 		<div class="form-wrapper">
-			<form class="form container">
+			<form @submit.prevent="handleSuccessModal" class="form container">
 				<h4>задать вопрос</h4>
-				<Input placeholder="Ваше имя" />
-				<Input placeholder="Телефон" />
-				<Button variable="outline">отправить</Button>
+				<Input v-model="name" :error="nameError" placeholder="Ваше имя" />
+				<Input v-model="phone" :error="phoneError" type="tel" placeholder="Телефон" />
+				<Button @click="handleSetError" variable="outline">отправить</Button>
 			</form>
 		</div>
 		<div class="info-wrapper">
@@ -35,7 +63,13 @@ import { Button, Input } from '@/shared/ui';
 							</p>
 						</li>
 					</ul>
-					<Button variable="outline"><DoubleArrowsIcon />посмотреть на карте</Button>
+					<a
+						href="https://yandex.ru/navi/213/moscow/?indoorLevel=1&ll=37.443041%2C55.633813&mode=routes&rtext=~55.633736%2C37.442863&rtt=auto&ruri=~&z=17.34"
+						target="_blank"
+						class="map-btn"
+					>
+						<DoubleArrowsIcon />посмотреть на карте
+					</a>
 				</div>
 				<div class="info-item">
 					<h5>Склад</h5>
@@ -50,7 +84,13 @@ import { Button, Input } from '@/shared/ui';
 							<p>Москва, ул. Красного Маяка, 26</p>
 						</li>
 					</ul>
-					<Button variable="outline"> <DoubleArrowsIcon />посмотреть на карте </Button>
+					<a
+						href="https://yandex.ru/navi/213/moscow/?ll=37.577094%2C55.606995&mode=routes&rtext=~55.606995%2C37.577094&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1NTU5NjMzMDc3EkbQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0YPQu9C40YbQsCDQmtGA0LDRgdC90L7Qs9C-INCc0LDRj9C60LAsIDI2IgoN8U4WQhWQbV5C&z=17.05"
+						target="_blank"
+						class="map-btn"
+					>
+						<DoubleArrowsIcon />посмотреть на карте
+					</a>
 				</div>
 				<div class="info-item">
 					<h5>реквизиты</h5>
@@ -126,6 +166,10 @@ import { Button, Input } from '@/shared/ui';
 			}
 			button {
 				height: 62px;
+				font-size: 16px;
+				text-transform: uppercase;
+				font-weight: 400;
+				line-height: 14px;
 			}
 		}
 	}
@@ -227,7 +271,7 @@ import { Button, Input } from '@/shared/ui';
 						}
 					}
 				}
-				button {
+				.map-btn {
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -236,7 +280,9 @@ import { Button, Input } from '@/shared/ui';
 					font-weight: 400;
 					line-height: 14px;
 					font-size: 14px;
+					color: var(--white-color);
 					text-transform: uppercase;
+					border: 1px solid var(--white-color);
 					gap: 10px;
 					@media (max-width: $tab) {
 						height: 45px;

@@ -46,7 +46,7 @@ import { breadcrumbsList } from '../config';
 		z-index: 2;
 
 		h1 {
-			font-weight: 400;
+			font-weight: 500;
 			font-size: 50px;
 			line-height: 50px;
 			z-index: 2;

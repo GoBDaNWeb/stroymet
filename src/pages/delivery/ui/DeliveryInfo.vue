@@ -43,7 +43,7 @@
 		color: var(--gray-color);
 		font-size: 40px;
 		line-height: 40px;
-		font-weight: 400;
+		font-weight: 500;
 		text-transform: uppercase;
 		@media (max-width: $tab) {
 			font-size: 30px;

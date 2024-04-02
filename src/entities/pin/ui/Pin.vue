@@ -12,10 +12,13 @@ const isOpen = ref(false);
 const handleOpenPin = () => {
 	isOpen.value = !isOpen.value;
 };
+const handleClosePin = () => {
+	isOpen.value = false;
+};
 </script>
 
 <template>
-	<div class="pin" :class="`${direction} ${isOpen ? 'active' : ''}`">
+	<div class="pin" @mouseleave="handleClosePin" :class="`${direction} ${isOpen ? 'active' : ''}`">
 		<Button @click="handleOpenPin" variable="nav"><PlusIcon /></Button>
 		<div class="pin-content">
 			<h4>кровля</h4>
@@ -47,6 +50,8 @@ const handleOpenPin = () => {
 }
 </style>
 <style lang="scss" scoped>
+@import '@/shared/styles/vars';
+
 .pin.left {
 	.pin-content {
 		left: 40px;
@@ -83,25 +88,38 @@ const handleOpenPin = () => {
 	.pin-content {
 		background: var(--white-color);
 		padding: 30px;
-		max-width: 300px;
+		width: 300px;
 		left: 40px;
 		top: 0;
 		opacity: 0;
 		transition: var(--trs-300);
 		position: absolute;
 		pointer-events: none;
+		@media (max-width: $tab) {
+			width: 280px;
+			padding: 20px;
+		}
 		h4 {
 			color: var(--gray-color);
 			font-weight: 400;
 			font-size: 20px;
 			line-height: 22px;
+			text-transform: uppercase;
 			margin-bottom: 20px;
+			@media (max-width: $tab) {
+				font-size: 16px;
+				line-height: 19px;
+			}
 		}
 		p {
 			color: var(--gray-color);
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 20px;
+			@media (max-width: $tab) {
+				font-size: 11px;
+				line-height: 14px;
+			}
 		}
 		.links {
 			margin-top: 20px;
@@ -117,6 +135,10 @@ const handleOpenPin = () => {
 				display: flex;
 				align-items: center;
 				gap: 10px;
+				@media (max-width: $tab) {
+					font-size: 11px;
+					line-height: 11px;
+				}
 			}
 		}
 	}

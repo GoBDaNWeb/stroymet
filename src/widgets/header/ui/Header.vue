@@ -2,16 +2,17 @@
 import { onMounted, ref, watch } from 'vue';
 import { RouterLink, useRoute } from 'vue-router';
 
+import { useCartStore } from '@/entities/cart-store';
 import { useMenuStore } from '@/entities/menu-store';
 
 import { links } from '@/shared/config';
 import { CartIcon, LogoIcon, LogoMob, WhatsappIcon } from '@/shared/icons';
 import { Button } from '@/shared/ui';
 
+const cart = useCartStore();
 const menu = useMenuStore();
 const route = useRoute();
 const active = ref(false);
-const conditionHeader = route.path !== '/';
 const controlNavbar = () => {
 	if (typeof window !== 'undefined') {
 		if (window.scrollY > 0) {
@@ -70,6 +71,9 @@ onMounted(() => {
 			</div>
 		</div>
 		<RouterLink to="/cart" class="cart-btn">
+			<div v-if="cart.getProductsCount > 0" class="count-cart">
+				{{ cart.getProductsCount }}
+			</div>
 			<CartIcon />
 		</RouterLink>
 	</header>
@@ -132,11 +136,37 @@ onMounted(() => {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		position: relative;
+		transition: var(--trs-300);
+		&:hover {
+			background: var(--blue-hover-color);
+		}
 		@media (max-width: $desktop-sm) {
 			min-width: 50px;
 			max-width: 50px;
 			max-height: 50px;
 			min-height: 50px;
+		}
+		.count-cart {
+			position: absolute;
+			font-size: 11px;
+			line-height: 11px;
+			font-weight: 400;
+			width: 15px;
+			height: 15px;
+			border-radius: 999px;
+			background: var(--white-color);
+			color: var(--gray-color);
+			top: 22px;
+			right: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@media (max-width: $desktop-sm) {
+				top: 8px;
+				right: 4px;
+			}
 		}
 	}
 	.burger {

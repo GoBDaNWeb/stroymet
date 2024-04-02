@@ -1,16 +1,20 @@
 :root {
-  --gray-color: #454a55;
-  --gray-back-color: #949fb1;
-  --light-gray-color: #d7e3e9;
-  --light2-gray-color: #a6aebc;
-  --hover-color: #ef921f;
-  --bg-color: #e6e3dd;
-  --white-color: #fff;
-  --green-color: #5ecf84;
-  --blue-color: #144ba1;
-  --border-color: rgba(255, 255, 255, 0.15);
-  --trs-300: 300ms ease;
-  --trs-600: 600ms ease;
+	--gray-color: #454a55;
+	--gray-back-color: #949fb1;
+	--light-gray-color: #d7e3e9;
+	--light2-gray-color: #a6aebc;
+	--hover-color: #ef921f;
+	--error-color: #ff6c6c;
+	--bg-color: #e6e3dd;
+	--white-color: #fff;
+	--green-color: #5ecf84;
+	--blue-color: #144ba1;
+	--blue-hover-color: #2967ca;
+	--border-color: rgba(255, 255, 255, 0.15);
+	--trs-300: 300ms ease;
+	--trs-600: 600ms ease;
+	--shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+	--shadow-inset: 0px 4px 15px 0px rgba(0, 0, 0, 0.15) inset;
 }
 
 $desktop-xl: 2000px;

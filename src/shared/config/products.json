@@ -9,7 +9,7 @@
 	{
 		"id": "02",
 		"url": "/product/02",
-		"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+		"imgs": ["/images/product/2.jpg", "/images/product/1.jpg", "/images/product/2.jpg", "/images/product/1.jpg"],
 		"price": 774,
 		"text": "Уголок крепежный анкерный"
 	},

@@ -95,9 +95,9 @@ const pagination = ref(null);
 		h3 {
 			color: var(--gray-color);
 			text-transform: uppercase;
-			font-weight: 400;
-			font-size: 50px;
-			line-height: 50px;
+			font-weight: 500;
+			font-size: 30px;
+			line-height: 30px;
 			@media (max-width: $tab) {
 				font-size: 24px;
 				line-height: 26px;

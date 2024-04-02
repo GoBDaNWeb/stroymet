@@ -1,22 +1,87 @@
-{
-	"id": "01",
-	"title": "Крепежный уголок анкерный",
-	"breadcrumbs": [
-		{ "url": "/", "title": "Главная" },
-		{ "url": "/catalog", "title": "Каталог" },
-		{ "url": "/catalog/perforation", "title": "Перфорация" },
-		{ "url": "/products/mounting-corners", "title": "Уголки крепежные" },
-		{ "url": "/product/01", "title": "Крепежный уголок анкерный" }
-	],
-	"imgs": [
-		"/images/product/1.jpg",
-		"/images/product/1.jpg",
-		"/images/product/1.jpg",
-		"/images/product/1.jpg",
-		"/images/product/1.jpg",
-		"/images/product/1.jpg"
-	],
-	"price": 774,
-	"url": "/product/01",
-	"count": 1
-}
+[
+	{
+		"id": "01",
+		"title": "Крепежный уголок анкерный",
+		"breadcrumbs": [
+			{ "url": "/", "title": "Главная" },
+			{ "url": "/catalog", "title": "Каталог" },
+			{ "url": "/catalog/perforation", "title": "Перфорация" },
+			{ "url": "/products/mounting-corners", "title": "Уголки крепежные" },
+			{ "url": "/product/01", "title": "Крепежный уголок анкерный" }
+		],
+		"imgs": [
+			"/images/product/1.jpg",
+			"/images/product/1.jpg",
+			"/images/product/1.jpg",
+			"/images/product/1.jpg",
+			"/images/product/1.jpg",
+			"/images/product/1.jpg"
+		],
+		"settings": false,
+		"price": 774,
+		"url": "/product/01",
+		"count": 1
+	},
+	{
+		"id": "02",
+		"title": "Металлочерепица МК 350 TWEED50",
+		"breadcrumbs": [
+			{ "url": "/", "title": "Главная" },
+			{ "url": "/catalog", "title": "Каталог" },
+			{ "url": "/catalog/perforation", "title": "Перфорация" },
+			{ "url": "/products/mounting-corners", "title": "Уголки крепежные" },
+			{ "url": "/product/02", "title": "Металлочерепица МК 350 TWEED50" }
+		],
+		"imgs": [
+			[
+				"/images/product/2.jpg",
+				"/images/product/2.jpg",
+				"/images/product/2.jpg",
+				"/images/product/2.jpg",
+				"/images/product/2.jpg",
+				"/images/product/2.jpg"
+			],
+			[
+				"/images/product/3.jpg",
+				"/images/product/3.jpg",
+				"/images/product/3.jpg",
+				"/images/product/3.jpg",
+				"/images/product/3.jpg",
+				"/images/product/3.jpg"
+			]
+		],
+		"settings": true,
+		"width": [
+			{ "value": "1180", "label": "1180 мм" },
+			{ "value": "1080", "label": "1080 мм" },
+			{ "value": "980", "label": "980 мм" },
+			{ "value": "880", "label": "880 мм" }
+		],
+		"length": [
+			{ "value": "6", "label": "6 м" },
+			{ "value": "5", "label": "5 м" },
+			{ "value": "4", "label": "4 м" },
+			{ "value": "3", "label": "3 м" }
+		],
+		"typeOfCoating": [
+			{ "value": "TWEED50", "label": "TWEED50" },
+			{ "value": "TWEED40", "label": "TWEED40" },
+			{ "value": "TWEED30", "label": "TWEED30" },
+			{ "value": "TWEED20", "label": "TWEED20" }
+		],
+		"colors": [
+			{ "color": "#175B9B", "title": "1014" },
+			{ "color": "#58A36D", "title": "1014" },
+			{ "color": "#9B5E17", "title": "1014" },
+			{ "color": "#9D4B32", "title": "1014" },
+			{ "color": "#5C3B31", "title": "1014" },
+			{ "color": "#FFFFFF", "title": "1014" },
+			{ "color": "#5E5E5E", "title": "1014" },
+			{ "color": "#2B2B2B", "title": "1014" },
+			{ "color": "#000000", "title": "1014" }
+		],
+		"price": 690,
+		"url": "/product/02",
+		"count": 1
+	}
+]

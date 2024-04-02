@@ -24,7 +24,7 @@ defineProps(['title', 'productList', 'haveBtn']);
 				:count="product.count"
 			/>
 		</div>
-		<div class="button-wrapper">
+		<div class="button-wrapper" v-if="productList.length > 8">
 			<Button><PlusIcon />показать ещё</Button>
 		</div>
 	</div>

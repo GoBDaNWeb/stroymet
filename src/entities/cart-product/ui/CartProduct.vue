@@ -54,6 +54,27 @@ const handleRemoveProduct = () => {
 	</div>
 </template>
 
+<style lang="scss">
+.cart-product {
+	& > button {
+		transition: var(--trs-300);
+		svg {
+			path {
+				transition: var(--trs-300);
+			}
+		}
+		&:hover {
+			border-color: var(--blue-hover-color);
+
+			svg {
+				path {
+					stroke: var(--blue-hover-color);
+				}
+			}
+		}
+	}
+}
+</style>
 <style lang="scss" scoped>
 @import '@/shared/styles/vars';
 

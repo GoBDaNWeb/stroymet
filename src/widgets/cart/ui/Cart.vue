@@ -1,20 +1,41 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import { RouterLink, useRouter } from 'vue-router';
 
 import { CartProduct } from '@/entities/cart-product';
 import { useCartStore } from '@/entities/cart-store';
+import { useModalStore } from '@/entities/modal-store';
 
 import { ArrowLeftIcon } from '@/shared/icons';
 import { Button, Input } from '@/shared/ui';
 
+const modal = useModalStore();
+
 const router = useRouter();
 const cart = useCartStore();
 const total = ref(0);
-const calcTotal = () => {
-	cart.cartProducts;
+
+const name = ref('');
+const nameError = ref(false);
+const phone = ref('');
+const phoneError = ref(false);
+
+const handleSetError = () => {
+	name.value.length === 0 ? (nameError.value = true) : (nameError.value = false);
+	phone.value.length === 0 ? (phoneError.value = true) : (phoneError.value = false);
+	return;
 };
-console.log(cart.getTotalPrice);
+
+const handleSuccessModal = () => {
+	if (!nameError.value && !phoneError.value) {
+		modal.handleOpenSuccessModal();
+	}
+};
+
+watch([name, phone], () => {
+	nameError.value = false;
+	phoneError.value = false;
+});
 </script>
 
 <template>
@@ -47,16 +68,20 @@ console.log(cart.getTotalPrice);
 						<div class="line"></div>
 						<h5>{{ cart.getTotalPrice }} руб.</h5>
 					</div>
-					<form class="order-form" :class="cart.getProductsCount > 0 ? '' : 'disabled'">
+					<form
+						@submit.prevent="handleSuccessModal"
+						class="order-form"
+						:class="cart.getProductsCount > 0 ? '' : 'disabled'"
+					>
 						<div class="inputs">
-							<Input placeholder="Ваше имя" />
-							<Input placeholder="Телефон" />
+							<Input v-model="name" :error="nameError" placeholder="Ваше имя" />
+							<Input v-model="phone" :error="phoneError" type="tel" placeholder="Телефон" />
 						</div>
 						<p>
 							Нажимая кнопку «Отправить» вы даёте своё согласие с
 							<a href="#">правилами обработки персональных данных</a>
 						</p>
-						<Button variable="primary">оформить заказ</Button>
+						<Button @click="handleSetError" variable="primary"> оформить заказ </Button>
 					</form>
 					<RouterLink v-if="cart.getProductsCount > 0" to="/catalog">
 						<ArrowLeftIcon />
@@ -95,7 +120,7 @@ console.log(cart.getTotalPrice);
 	}
 	h1 {
 		color: var(--gray-color);
-		font-weight: 400;
+		font-weight: 500;
 		font-size: 40px;
 		line-height: 40px;
 		text-transform: uppercase;

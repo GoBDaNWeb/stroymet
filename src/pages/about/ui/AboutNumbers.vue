@@ -44,7 +44,7 @@
 	.about-numbers-item {
 		h4 {
 			color: var(--gray-color);
-			font-weight: 400;
+			font-weight: 500;
 			font-size: 30px;
 			line-height: 33px;
 			text-transform: uppercase;

@@ -42,7 +42,7 @@ defineProps(['title', 'catalogList', 'haveBtn']);
 		h3 {
 			color: var(--gray-color);
 			font-size: 50px;
-			font-weight: 400;
+			font-weight: 500;
 			line-height: 50px;
 			text-transform: uppercase;
 			@media (max-width: $tab) {

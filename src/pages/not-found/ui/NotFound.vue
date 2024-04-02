@@ -53,7 +53,7 @@ const router = useRouter();
 			}
 			h1 {
 				color: var(--white-color);
-				font-weight: 400;
+				font-weight: 500;
 				font-size: 40px;
 				line-height: 40px;
 				text-transform: uppercase;

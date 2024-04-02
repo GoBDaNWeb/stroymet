@@ -5,7 +5,7 @@ import { Pin } from '@/entities/pin';
 <template>
 	<div class="hero">
 		<!-- <img src="/images/home/hero.jpg" alt="" /> -->
-		<div class="pins">
+		<div class="pins container">
 			<Pin direction="left" />
 			<Pin direction="right" />
 			<Pin direction="right" />
@@ -43,17 +43,23 @@ import { Pin } from '@/entities/pin';
 		& > div:nth-child(1) {
 			position: absolute;
 			top: 27%;
-			left: 10%;
+			left: 30%;
+			z-index: 3;
 		}
 		& > div:nth-child(2) {
 			position: absolute;
 			top: 37%;
 			left: 50%;
+			z-index: 1;
+			@media (max-width: $tab) {
+				top: 47%;
+			}
 		}
 		& > div:nth-child(3) {
 			position: absolute;
 			top: 32%;
 			left: 67%;
+			z-index: 2;
 		}
 	}
 	.container {
@@ -66,7 +72,7 @@ import { Pin } from '@/entities/pin';
 		z-index: 2;
 		pointer-events: none;
 		h1 {
-			font-weight: 400;
+			font-weight: 500;
 			font-size: 50px;
 			line-height: 50px;
 			z-index: 2;

@@ -7,6 +7,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 
+import { Fancybox } from '@/widgets/fancybox';
+
 import { ArrowLeftIcon, ArrowRightIcon } from '@/shared/icons';
 
 defineProps(['imgs']);
@@ -27,42 +29,45 @@ const pagination = ref(null);
 				<button ref="next" class="nav"><ArrowRightIcon /></button>
 			</div>
 		</div>
-		<Swiper
-			:loop="true"
-			:centeredSlides="true"
-			:slidesPerView="3.2"
-			:spaceBetween="10"
-			class="production-swiper"
-			:navigation="{
-				prevEl: prev,
-				nextEl: next
-			}"
-			:pagination="{
-				el: pagination,
-				clickable: true
-			}"
-			:modules="modules"
-			:breakpoints="{
-				0: {
-					slidesPerView: 1.2,
-					centeredSlides: false
-				},
-				767: {
-					slidesPerView: 2.2
-				},
-				1024: {
-					centeredSlides: true,
-					slidesPerView: 3.2
-				}
-			}"
-		>
-			<SwiperSlide v-for="(img, index) in imgs" :key="index">
-				<div class="image-wrapper">
-					<img :src="img.img" alt="photo" />
-				</div>
-				<p>{{ img.title }}</p>
-			</SwiperSlide>
-		</Swiper>
+		<Fancybox>
+			<Swiper
+				:loop="true"
+				:centeredSlides="true"
+				:slidesPerView="3.2"
+				:spaceBetween="10"
+				class="production-swiper"
+				:navigation="{
+					prevEl: prev,
+					nextEl: next
+				}"
+				:pagination="{
+					el: pagination,
+					clickable: true
+				}"
+				:modules="modules"
+				:breakpoints="{
+					0: {
+						slidesPerView: 1.2,
+						centeredSlides: false
+					},
+					767: {
+						slidesPerView: 2.2
+					},
+					1024: {
+						centeredSlides: true,
+						slidesPerView: 3.2
+					}
+				}"
+			>
+				<SwiperSlide v-for="(img, index) in imgs" :key="index">
+					<a data-fancybox="production" :href="img.img" class="image-wrapper">
+						<img :src="img.img" alt="photo" />
+					</a>
+					<p>{{ img.title }}</p>
+				</SwiperSlide>
+			</Swiper>
+		</Fancybox>
+
 		<div ref="pagination" class="pagination"></div>
 	</div>
 </template>
@@ -100,7 +105,7 @@ const pagination = ref(null);
 		h3 {
 			color: var(--gray-color);
 			text-transform: uppercase;
-			font-weight: 400;
+			font-weight: 500;
 			font-size: 50px;
 			line-height: 50px;
 			@media (max-width: $tab) {
@@ -160,6 +165,7 @@ const pagination = ref(null);
 		.image-wrapper {
 			position: relative;
 			padding-bottom: 65%;
+			display: block;
 			@media (max-width: $tab) {
 				padding-bottom: 75%;
 			}

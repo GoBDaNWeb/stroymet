@@ -116,7 +116,7 @@ import { DeliveryIcon, GostIcon, ProductionIcon, WastesIcon } from '@/shared/ico
 			p {
 				font-size: 16px;
 				line-height: 20px;
-				font-weight: 400;
+				font-weight: 350;
 				color: var(--gray-color);
 				@media (max-width: $tab) {
 					font-size: 14px;

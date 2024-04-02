@@ -1,8 +1,35 @@
 <script setup>
+import { ref, watch } from 'vue';
+
 import { Map } from '@/entities/map';
+import { useModalStore } from '@/entities/modal-store';
 
 import { DoubleArrowsIcon } from '@/shared/icons';
 import { Button, Input, Textarea } from '@/shared/ui';
+
+const modal = useModalStore();
+
+const name = ref('');
+const nameError = ref(false);
+const phone = ref('');
+const phoneError = ref(false);
+
+const handleSetError = () => {
+	name.value.length === 0 ? (nameError.value = true) : (nameError.value = false);
+	phone.value.length === 0 ? (phoneError.value = true) : (phoneError.value = false);
+	return;
+};
+
+const handleSuccessModal = () => {
+	if (!nameError.value && !phoneError.value) {
+		modal.handleOpenSuccessModal();
+	}
+};
+
+watch([name, phone], () => {
+	nameError.value = false;
+	phoneError.value = false;
+});
 </script>
 
 <template>
@@ -22,7 +49,13 @@ import { Button, Input, Textarea } from '@/shared/ui';
 					<p>Москва, Киевское шоссе, стр. 2В <br />Бизнес Парк «Румянцево»</p>
 					<div class="map-wrapper">
 						<Map id="map" :coords="[55.633770391314265, 37.44296229890094]" />
-						<Button><DoubleArrowsIcon />развернуть</Button>
+						<a
+							href="https://yandex.ru/navi/213/moscow/?indoorLevel=1&ll=37.443041%2C55.633813&mode=routes&rtext=~55.633736%2C37.442863&rtt=auto&ruri=~&z=17.34"
+							target="_blank"
+						>
+							<DoubleArrowsIcon />
+							развернуть
+						</a>
 					</div>
 				</div>
 			</div>
@@ -39,23 +72,27 @@ import { Button, Input, Textarea } from '@/shared/ui';
 					<p>Москва, ул. Красного Маяка, 26</p>
 					<div class="map-wrapper">
 						<Map id="map2" :coords="[55.60689789477403, 37.57718033068848]" />
-						<Button><DoubleArrowsIcon />развернуть</Button>
+						<a
+							href="https://yandex.ru/navi/213/moscow/?ll=37.577094%2C55.606995&mode=routes&rtext=~55.606995%2C37.577094&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1NTU5NjMzMDc3EkbQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0YPQu9C40YbQsCDQmtGA0LDRgdC90L7Qs9C-INCc0LDRj9C60LAsIDI2IgoN8U4WQhWQbV5C&z=17.05"
+							target="_blank"
+							><DoubleArrowsIcon />развернуть</a
+						>
 					</div>
 				</div>
 			</div>
 			<div class="contacts-item">
-				<form>
+				<form @submit.prevent="handleSuccessModal">
 					<h4>Отзывы <br />и предложения</h4>
 					<div class="inputs">
-						<Input placeholder="Ваше имя" />
-						<Input placeholder="Телефон" />
+						<Input v-model="name" :error="nameError" placeholder="Ваше имя" />
+						<Input v-model="phone" :error="phoneError" type="tel" placeholder="Телефон" />
 						<Textarea placeholder="Сообщение" />
 					</div>
 					<p>
 						Нажимая кнопку «Отправить» вы даёте своё согласие с
 						<a href="#" target="_blank">правилами обработки персональных данных</a>
 					</p>
-					<Button variable="primary">отправить</Button>
+					<Button @click="handleSetError" variable="primary">отправить</Button>
 				</form>
 			</div>
 		</div>
@@ -67,7 +104,7 @@ import { Button, Input, Textarea } from '@/shared/ui';
 	.contacts-info-content {
 		.contacts-item {
 			.map-wrapper {
-				button {
+				a {
 					svg {
 						path {
 							fill: var(--blue-color);
@@ -85,7 +122,7 @@ import { Button, Input, Textarea } from '@/shared/ui';
 .contacts-info {
 	h1 {
 		color: var(--gray-color);
-		font-weight: 400;
+		font-weight: 500;
 		font-size: 40px;
 		line-height: 40px;
 		text-transform: uppercase;
@@ -155,7 +192,7 @@ import { Button, Input, Textarea } from '@/shared/ui';
 			}
 			h4 {
 				color: var(--gray-color);
-				font-weight: 400;
+				font-weight: 500;
 				font-size: 30px;
 				line-height: 33px;
 				text-transform: uppercase;
@@ -245,7 +282,7 @@ import { Button, Input, Textarea } from '@/shared/ui';
 						width: 100%;
 						height: 100%;
 					}
-					button {
+					a {
 						position: absolute;
 						top: 10px;
 						right: 10px;
