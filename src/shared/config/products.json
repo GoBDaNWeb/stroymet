@@ -46,7 +46,8 @@
 			{ "color": "#5E5E5E", "title": "1014" },
 			{ "color": "#2B2B2B", "title": "1014" },
 			{ "color": "#000000", "title": "1014" }
-		]
+		],
+		"color": { "color": "#175B9B", "title": "1014" }
 	},
 	{
 		"id": "03",

@@ -16,7 +16,8 @@ const props = defineProps([
 	'url',
 	'width',
 	'length',
-	'type'
+	'type',
+	'color'
 ]);
 const count = ref(props.count);
 const cartStore = useCartStore();
@@ -38,7 +39,7 @@ const handleRemoveProduct = () => {
 	cartStore.removeProduct(props.id);
 };
 
-const conditionSettings = props.width && props.length && props.type;
+const conditionSettings = props.width && props.length && props.type && props.color;
 </script>
 
 <template>
@@ -60,6 +61,17 @@ const conditionSettings = props.width && props.length && props.type;
 				<li>
 					<span>Тип покрытия</span>
 					<p>{{ type }}</p>
+				</li>
+				<li>
+					<span>Цвет</span>
+					<div class="color-item">
+						<div class="color-wrapper">
+							<div :style="`background-color: ${color.color}`" class="color"></div>
+						</div>
+						<p>
+							{{ color.title }}
+						</p>
+					</div>
 				</li>
 			</ul>
 			<div class="counter-wrapper">
@@ -173,6 +185,23 @@ const conditionSettings = props.width && props.length && props.type;
 					font-size: 14px;
 					line-height: 18px;
 					white-space: nowrap;
+				}
+				.color-item {
+					width: fit-content;
+					.color-wrapper {
+						width: 43px;
+						height: 43px;
+						border: 1px solid var(--light-gray-color);
+						padding: 5px;
+						.color {
+							width: 100%;
+							height: 100%;
+						}
+					}
+					p {
+						margin-top: 5px;
+						text-align: center;
+					}
 				}
 			}
 		}

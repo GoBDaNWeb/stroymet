@@ -39,7 +39,6 @@ const handleClearError = type => {
 		nameError.value = false;
 	}
 };
-console.log(cart.cartProducts);
 </script>
 
 <template>
@@ -61,6 +60,7 @@ console.log(cart.cartProducts);
 						:width="product.width"
 						:length="product.length"
 						:type="product.type"
+						:color="product.color"
 					/>
 				</div>
 				<div v-else class="cart-alert">

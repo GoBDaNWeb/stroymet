@@ -15,6 +15,7 @@ const props = defineProps([
 	'isTotal',
 	'width',
 	'length',
+	'color',
 	'type'
 ]);
 const cartStore = useCartStore();
@@ -29,7 +30,8 @@ const handleSetProduct = () => {
 		count: props.count,
 		width: props.width ? props.width : null,
 		length: props.length ? props.length : null,
-		type: props.type ? props.type : null
+		type: props.type ? props.type : null,
+		color: props.color ? props.color : null
 	};
 	cartStore.setProduct(product);
 	localStorage.setItem('products', JSON.stringify([...cartStore.cartProducts]));

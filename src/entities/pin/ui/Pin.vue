@@ -95,7 +95,7 @@ const handleClosePin = () => {
 		position: absolute;
 		pointer-events: none;
 		@media (max-width: $tab) {
-			width: 200px;
+			width: 220px;
 			padding: 20px;
 		}
 		h4 {

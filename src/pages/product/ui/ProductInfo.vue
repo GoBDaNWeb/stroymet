@@ -16,8 +16,9 @@ const currentSlilde = ref(0);
 const swiperRef = ref(null);
 const currentColor = ref(0);
 const width = ref(props.product.width ? props.product.width[0].label : null);
-const length = ref(props.product.length ? props.product.length[0]?.label : null);
-const type = ref(props.product.typeOfCoating ? props.product.typeOfCoating[0]?.label : null);
+const length = ref(props.product.length ? props.product.length[0].label : null);
+const type = ref(props.product.typeOfCoating ? props.product.typeOfCoating[0].label : null);
+const color = ref(props.product.color ? props.product.color : null);
 const count = ref(props.product.count);
 
 const handleChangeCount = type => {
@@ -30,8 +31,9 @@ const handleChangeCount = type => {
 		count.value--;
 	}
 };
-const handleSelectColor = index => {
+const handleSelectColor = (index, selectColor) => {
 	currentColor.value = index;
+	color.value = selectColor;
 };
 </script>
 
@@ -51,12 +53,12 @@ const handleSelectColor = index => {
 						</div>
 						<div class="select-wrapper">
 							<p>Длина</p>
-							<Select name="length" :options="product.length" />
+							<Select v-model="length" name="length" :options="product.length" />
 						</div>
 					</div>
 					<div class="select-wrapper">
 						<p>Тип покрытия</p>
-						<Select name="type" :options="product.typeOfCoating" />
+						<Select v-model="type" name="type" :options="product.typeOfCoating" />
 					</div>
 				</div>
 				<div class="colors">
@@ -64,7 +66,7 @@ const handleSelectColor = index => {
 					<div class="colors-list">
 						<div
 							v-for="(color, index) in product.colors"
-							@click="handleSelectColor(index)"
+							@click="handleSelectColor(index, color)"
 							:key="color.color"
 							class="color-item"
 							:class="currentColor === index ? 'active' : ''"
@@ -120,6 +122,7 @@ const handleSelectColor = index => {
 					:width="width"
 					:length="length"
 					:type="type"
+					:color="color"
 				/>
 			</div>
 		</div>

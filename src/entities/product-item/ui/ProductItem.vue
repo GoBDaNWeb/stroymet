@@ -40,7 +40,6 @@ const setSwiperRef = swiper => {
 const handleSetSlide = slide => {
 	currentSlilde.value = slide;
 };
-console.log(cart.getProduct(props.id));
 
 const handleChangeCount = type => {
 	if (type === 'inc') {

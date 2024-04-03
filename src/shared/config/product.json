@@ -78,6 +78,7 @@
 			{ "color": "#2B2B2B", "title": "1014" },
 			{ "color": "#000000", "title": "1014" }
 		],
+		"color": { "color": "#175B9B", "title": "1014" },
 		"price": 690,
 		"url": "/product/02",
 		"count": 1
