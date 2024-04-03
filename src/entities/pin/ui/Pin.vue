@@ -14,6 +14,10 @@ const handleOpenPin = () => {
 const handleClosePin = () => {
 	isOpen.value = false;
 };
+
+window.addEventListener('touchstart', () => {
+	isOpen.value = false;
+})
 </script>
 
 <template>

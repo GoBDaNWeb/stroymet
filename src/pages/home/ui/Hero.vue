@@ -86,7 +86,7 @@ const { width, height } = useWindowSize()
 			@media(max-width: $tab-sm) {
 				left: 14%;
 				top: 30%;
-				z-index: 3;
+				z-index: 7;
 			}
 		}
 		& > div:nth-child(4) {
@@ -107,6 +107,7 @@ const { width, height } = useWindowSize()
 				top: 38%;
 				z-index: 5;
 			}
+			
 		}
 		& > div:nth-child(5) {
 			position: absolute;
@@ -120,6 +121,10 @@ const { width, height } = useWindowSize()
 				left: 79%;
 				top: 29%;
 				z-index: 6;
+			}
+			@media(max-width: $mob) {
+				left: 87%;
+				top: 29%;
 			}
 		}
 	}
