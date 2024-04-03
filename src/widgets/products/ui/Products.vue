@@ -4,7 +4,7 @@ import { ProductItem } from '@/entities/product-item';
 import { DownloadIcon, PlusIcon } from '@/shared/icons';
 import { Button } from '@/shared/ui';
 
-defineProps(['title', 'productList', 'haveBtn']);
+const props = defineProps(['title', 'productList', 'haveBtn']);
 </script>
 
 <template>
@@ -25,6 +25,7 @@ defineProps(['title', 'productList', 'haveBtn']);
 				:width="product.width ? product.width[0].label : null"
 				:length="product.length ? product.length[0].label : null"
 				:type="product.typeOfCoating ? product.typeOfCoating[0].label : null"
+				:color="product.color ? product.color : null"
 			/>
 		</div>
 		<div class="button-wrapper" v-if="productList.length > 8">
@@ -44,7 +45,7 @@ defineProps(['title', 'productList', 'haveBtn']);
 		h3 {
 			color: var(--gray-color);
 			font-size: 50px;
-			font-weight: 400;
+			font-weight: 500;
 			line-height: 50px;
 			text-transform: uppercase;
 			@media (max-width: $tab) {

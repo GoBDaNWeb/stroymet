@@ -21,9 +21,15 @@ let productName = ref('');
 onMounted(() => {
 	const productItem = catalogList
 		.map(item => {
-			return item.catalogInner.filter(product => {
-				return product.url === route.path;
-			});
+			if (item.catalogInner) {
+				return item.catalogInner.filter(product => {
+					return product.url === route.path;
+				});
+			} else {
+				return catalogList.filter(product => {
+					return product.url === route.path;
+				});
+			}
 		})
 		.flat(Infinity);
 	breadcrumbs.value = productItem[0].breadcrumbs;

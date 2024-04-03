@@ -23,10 +23,11 @@ const props = defineProps([
 	'count',
 	'width',
 	'length',
-	'type'
+	'type',
+	'color'
 ]);
 const modules = ref([Pagination]);
-
+console.log('props',props);
 const cart = useCartStore();
 const currentSlilde = ref(0);
 const swiperRef = ref(null);
@@ -118,6 +119,7 @@ onMounted(() => {
 			:width="width"
 			:length="length"
 			:type="type"
+			:color="color"
 		/>
 	</div>
 </template>

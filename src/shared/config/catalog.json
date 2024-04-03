@@ -3,324 +3,19 @@
 		"id": "01",
 		"img": "/images/catalog/1.jpg",
 		"title": "Металлочерепица",
-		"url": "/catalog/metal-tiles",
-		"catalogInner": [
-			{
-				"id": "01",
-				"title": "Уголки крепежные",
-				"url": "/products/mounting-corners",
-				"img": "/images/catalog/1.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/metal-tiles", "title": "Металлочерепица" },
-					{ "url": "/products/mounting-corners", "title": "Уголки крепежные" }
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "02",
-				"title": "Пластины перфорированные",
-				"url": "/products/perforated-plates",
-				"img": "/images/catalog/2.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/metal-tiles", "title": "Металлочерепица" },
-					{
-						"url": "/products/perforated-plates",
-						"title": "Пластины перфорированные"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "03",
-				"title": "Крепеж для балок и бруса",
-				"url": "/products/fasteners-for-beams-and-beams",
-				"img": "/images/catalog/3.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/metal-tiles", "title": "Металлочерепица" },
-					{
-						"url": "/products/fasteners-for-beams-and-beams",
-						"title": "Крепеж для балок и бруса"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "04",
-				"title": "Оконная пластина",
-				"url": "/products/window-plate",
-				"img": "/images/catalog/4.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/metal-tiles", "title": "Металлочерепица" },
-					{ "url": "/products/window-plate", "title": "Оконная пластина" }
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "05",
-				"title": "Угловой соединитель",
-				"url": "/products/corner-connector",
-				"img": "/images/catalog/5.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/metal-tiles", "title": "Металлочерепица" },
-					{
-						"url": "/products/corner-connector",
-						"title": "Угловой соединитель"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "06",
-				"title": "Скользящая опора для стропил",
-				"url": "/products/sliding-support-for-rafters",
-				"img": "/images/catalog/6.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/metal-tiles", "title": "Металлочерепица" },
-					{
-						"url": "/products/sliding-support-for-rafters",
-						"title": "Скользящая опора для стропил"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "07",
-				"title": "Крепеж для гипсокартонного профиля",
-				"url": "/products/fasteners-for-drywall-profile",
-				"img": "/images/catalog/7.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/metal-tiles", "title": "Металлочерепица" },
-					{
-						"url": "/products/fasteners-for-drywall-profile",
-						"title": "Крепеж для гипсокартонного профиля"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			}
-		]
+		"url": "/products/metal-tiles",
+		"breadcrumbs": [
+			{ "url": "/", "title": "Главная" },
+			{ "url": "/catalog", "title": "Каталог" },
+			{ "url": "/products/metal-tiles", "title": "Металлочерепица" }
+		],
+		"catalogInner": null
 	},
 	{
 		"id": "02",
 		"img": "/images/catalog/2.jpg",
-		"title": "Профилированный лист",
-		"url": "/catalog/profiled-sheet",
+		"title": "Перфорированный крепеж",
+		"url": "/catalog/perforated-fasteners",
 		"catalogInner": [
 			{
 				"id": "01",
@@ -330,7 +25,7 @@
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{ "url": "/catalog/perforated-fasteners", "title": "Перфорированный крепеж" },
 					{ "url": "/products/mounting-corners", "title": "Уголки крепежные" }
 				],
 				"products": [
@@ -372,7 +67,7 @@
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{ "url": "/catalog/perforated-fasteners", "title": "Перфорированный крепеж" },
 					{
 						"url": "/products/perforated-plates",
 						"title": "Пластины перфорированные"
@@ -417,7 +112,7 @@
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{ "url": "/catalog/perforated-fasteners", "title": "Перфорированный крепеж" },
 					{
 						"url": "/products/fasteners-for-beams-and-beams",
 						"title": "Крепеж для балок и бруса"
@@ -462,7 +157,7 @@
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{ "url": "/catalog/perforated-fasteners", "title": "Перфорированный крепеж" },
 					{ "url": "/products/window-plate", "title": "Оконная пластина" }
 				],
 				"products": [
@@ -504,7 +199,7 @@
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{ "url": "/catalog/perforated-fasteners", "title": "Перфорированный крепеж" },
 					{
 						"url": "/products/corner-connector",
 						"title": "Угловой соединитель"
@@ -549,7 +244,7 @@
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{ "url": "/catalog/perforated-fasteners", "title": "Перфорированный крепеж" },
 					{
 						"url": "/products/sliding-support-for-rafters",
 						"title": "Скользящая опора для стропил"
@@ -594,10 +289,55 @@
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{ "url": "/catalog/perforated-fasteners", "title": "Перфорированный крепеж" },
 					{
 						"url": "/products/fasteners-for-drywall-profile",
 						"title": "Крепеж для гипсокартонного профиля"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "08",
+				"title": "Лента монтажная",
+				"url": "/products/mounting-tape",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/perforated-fasteners", "title": "Перфорированный крепеж" },
+					{
+						"url": "/products/mounting-tape",
+						"title": "Лента монтажная"
 					}
 				],
 				"products": [
@@ -636,19 +376,19 @@
 	{
 		"id": "03",
 		"img": "/images/catalog/3.jpg",
-		"title": "Перфорация",
-		"url": "/catalog/perforation",
+		"title": "Профилированный лист",
+		"url": "/catalog/profiled-sheet",
 		"catalogInner": [
 			{
 				"id": "01",
-				"title": "Уголки крепежные",
-				"url": "/products/mounting-corners",
+				"title": "Профнастил С8",
+				"url": "/products/profiled-flooring-c8",
 				"img": "/images/catalog/1.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/perforation", "title": "Перфорация" },
-					{ "url": "/products/mounting-corners", "title": "Уголки крепежные" }
+					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{ "url": "/products/profiled-flooring-c8", "title": "Профнастил С8" }
 				],
 				"products": [
 					{
@@ -683,16 +423,16 @@
 			},
 			{
 				"id": "02",
-				"title": "Пластины перфорированные",
-				"url": "/products/perforated-plates",
+				"title": "Профнастил С10",
+				"url": "/products/profiled-flooring-c10",
 				"img": "/images/catalog/2.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/perforation", "title": "Перфорация" },
+					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
 					{
-						"url": "/products/perforated-plates",
-						"title": "Пластины перфорированные"
+						"url": "/products/profiled-flooring-c10",
+						"title": "Профнастил С10"
 					}
 				],
 				"products": [
@@ -728,16 +468,16 @@
 			},
 			{
 				"id": "03",
-				"title": "Крепеж для балок и бруса",
-				"url": "/products/fasteners-for-beams-and-beams",
+				"title": "Профнастил С20",
+				"url": "/products/profiled-flooring-c20",
 				"img": "/images/catalog/3.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/perforation", "title": "Перфорация" },
+					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
 					{
-						"url": "/products/fasteners-for-beams-and-beams",
-						"title": "Крепеж для балок и бруса"
+						"url": "/products/profiled-flooring-c20",
+						"title": "Профнастил С20"
 					}
 				],
 				"products": [
@@ -773,14 +513,14 @@
 			},
 			{
 				"id": "04",
-				"title": "Оконная пластина",
-				"url": "/products/window-plate",
+				"title": "Профнастил С21",
+				"url": "/products/profiled-flooring-c21",
 				"img": "/images/catalog/4.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/perforation", "title": "Перфорация" },
-					{ "url": "/products/window-plate", "title": "Оконная пластина" }
+					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{ "url": "/products/profiled-flooring-c21", "title": "Профнастил С21" }
 				],
 				"products": [
 					{
@@ -815,16 +555,16 @@
 			},
 			{
 				"id": "05",
-				"title": "Угловой соединитель",
-				"url": "/products/corner-connector",
+				"title": "Профнастил НС35",
+				"url": "/products/profiled-flooring-hc21",
 				"img": "/images/catalog/5.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/perforation", "title": "Перфорация" },
+					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
 					{
-						"url": "/products/corner-connector",
-						"title": "Угловой соединитель"
+						"url": "/products/profiled-flooring-hc21",
+						"title": "Профнастил НС35"
 					}
 				],
 				"products": [
@@ -860,16 +600,16 @@
 			},
 			{
 				"id": "06",
-				"title": "Скользящая опора для стропил",
-				"url": "/products/sliding-support-for-rafters",
+				"title": "Профнастил НС44",
+				"url": "/products/profiled-flooring-hc44",
 				"img": "/images/catalog/6.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/perforation", "title": "Перфорация" },
+					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
 					{
-						"url": "/products/sliding-support-for-rafters",
-						"title": "Скользящая опора для стропил"
+						"url": "/products/profiled-flooring-hc44",
+						"title": "Профнастил НС44"
 					}
 				],
 				"products": [
@@ -905,16 +645,151 @@
 			},
 			{
 				"id": "07",
-				"title": "Крепеж для гипсокартонного профиля",
-				"url": "/products/fasteners-for-drywall-profile",
+				"title": "Профнастил Н60",
+				"url": "/products/profiled-flooring-h60",
 				"img": "/images/catalog/7.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/perforation", "title": "Перфорация" },
+					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
 					{
-						"url": "/products/fasteners-for-drywall-profile",
-						"title": "Крепеж для гипсокартонного профиля"
+						"url": "/products/profiled-flooring-h60",
+						"title": "Профнастил Н60"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "08",
+				"title": "Профнастил Н75",
+				"url": "/products/profiled-flooring-h75",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{
+						"url": "/products/profiled-flooring-h75",
+						"title": "Профнастил Н75"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "09",
+				"title": "Профнастил Н114",
+				"url": "/products/profiled-flooring-h114",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{
+						"url": "/products/profiled-flooring-h114",
+						"title": "Профнастил Н114"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "10",
+				"title": "Профнастил Н153",
+				"url": "/products/profiled-flooring-h153",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/profiled-sheet", "title": "Профилированный лист" },
+					{
+						"url": "/products/profiled-flooring-h153",
+						"title": "Профнастил Н153"
 					}
 				],
 				"products": [
@@ -958,14 +833,14 @@
 		"catalogInner": [
 			{
 				"id": "01",
-				"title": "Уголки крепежные",
+				"title": "П- образный",
 				"url": "/products/mounting-corners",
 				"img": "/images/catalog/1.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{ "url": "/catalog/picket-fence", "title": "Штакетник" },
-					{ "url": "/products/mounting-corners", "title": "Уголки крепежные" }
+					{ "url": "/products/u-shaped", "title": "П- образный" }
 				],
 				"products": [
 					{
@@ -1000,7 +875,7 @@
 			},
 			{
 				"id": "02",
-				"title": "Пластины перфорированные",
+				"title": "М- образный",
 				"url": "/products/perforated-plates",
 				"img": "/images/catalog/2.jpg",
 				"breadcrumbs": [
@@ -1008,8 +883,8 @@
 					{ "url": "/catalog", "title": "Каталог" },
 					{ "url": "/catalog/picket-fence", "title": "Штакетник" },
 					{
-						"url": "/products/perforated-plates",
-						"title": "Пластины перфорированные"
+						"url": "/products/m-shaped",
+						"title": "М- образный"
 					}
 				],
 				"products": [
@@ -1045,193 +920,16 @@
 			},
 			{
 				"id": "03",
-				"title": "Крепеж для балок и бруса",
-				"url": "/products/fasteners-for-beams-and-beams",
+				"title": "Р-образный",
+				"url": "/products/m-shaped",
 				"img": "/images/catalog/3.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{ "url": "/catalog/picket-fence", "title": "Штакетник" },
 					{
-						"url": "/products/fasteners-for-beams-and-beams",
-						"title": "Крепеж для балок и бруса"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "04",
-				"title": "Оконная пластина",
-				"url": "/products/window-plate",
-				"img": "/images/catalog/4.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/picket-fence", "title": "Штакетник" },
-					{ "url": "/products/window-plate", "title": "Оконная пластина" }
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "05",
-				"title": "Угловой соединитель",
-				"url": "/products/corner-connector",
-				"img": "/images/catalog/5.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/picket-fence", "title": "Штакетник" },
-					{
-						"url": "/products/corner-connector",
-						"title": "Угловой соединитель"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "06",
-				"title": "Скользящая опора для стропил",
-				"url": "/products/sliding-support-for-rafters",
-				"img": "/images/catalog/6.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/picket-fence", "title": "Штакетник" },
-					{
-						"url": "/products/sliding-support-for-rafters",
-						"title": "Скользящая опора для стропил"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "07",
-				"title": "Крепеж для гипсокартонного профиля",
-				"url": "/products/fasteners-for-drywall-profile",
-				"img": "/images/catalog/7.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{ "url": "/catalog/picket-fence", "title": "Штакетник" },
-					{
-						"url": "/products/fasteners-for-drywall-profile",
-						"title": "Крепеж для гипсокартонного профиля"
+						"url": "/products/p-shaped",
+						"title": "Р-образный"
 					}
 				],
 				"products": [
@@ -1271,359 +969,33 @@
 		"id": "05",
 		"img": "/images/catalog/5.jpg",
 		"title": "Гладкий металлический лист",
-		"url": "/catalog/smooth-metal-sheet",
-		"catalogInner": [
-			{
-				"id": "01",
-				"title": "Уголки крепежные",
-				"url": "/products/mounting-corners",
-				"img": "/images/catalog/1.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{
-						"url": "/catalog/smooth-metal-sheet",
-						"title": "Гладкий металлический лист"
-					},
-					{ "url": "/products/mounting-corners", "title": "Уголки крепежные" }
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "02",
-				"title": "Пластины перфорированные",
-				"url": "/products/perforated-plates",
-				"img": "/images/catalog/2.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{
-						"url": "/catalog/smooth-metal-sheet",
-						"title": "Гладкий металлический лист"
-					},
-					{
-						"url": "/products/perforated-plates",
-						"title": "Пластины перфорированные"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "03",
-				"title": "Крепеж для балок и бруса",
-				"url": "/products/fasteners-for-beams-and-beams",
-				"img": "/images/catalog/3.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{
-						"url": "/catalog/smooth-metal-sheet",
-						"title": "Гладкий металлический лист"
-					},
-					{
-						"url": "/products/fasteners-for-beams-and-beams",
-						"title": "Крепеж для балок и бруса"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "04",
-				"title": "Оконная пластина",
-				"url": "/products/window-plate",
-				"img": "/images/catalog/4.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{
-						"url": "/catalog/smooth-metal-sheet",
-						"title": "Гладкий металлический лист"
-					},
-					{ "url": "/products/window-plate", "title": "Оконная пластина" }
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "05",
-				"title": "Угловой соединитель",
-				"url": "/products/corner-connector",
-				"img": "/images/catalog/5.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{
-						"url": "/catalog/smooth-metal-sheet",
-						"title": "Гладкий металлический лист"
-					},
-					{
-						"url": "/products/corner-connector",
-						"title": "Угловой соединитель"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "06",
-				"title": "Скользящая опора для стропил",
-				"url": "/products/sliding-support-for-rafters",
-				"img": "/images/catalog/6.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{
-						"url": "/catalog/smooth-metal-sheet",
-						"title": "Гладкий металлический лист"
-					},
-					{
-						"url": "/products/sliding-support-for-rafters",
-						"title": "Скользящая опора для стропил"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "07",
-				"title": "Крепеж для гипсокартонного профиля",
-				"url": "/products/fasteners-for-drywall-profile",
-				"img": "/images/catalog/7.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{
-						"url": "/catalog/smooth-metal-sheet",
-						"title": "Гладкий металлический лист"
-					},
-					{
-						"url": "/products/fasteners-for-drywall-profile",
-						"title": "Крепеж для гипсокартонного профиля"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			}
-		]
+		"url": "/products/smooth-metal-sheet",
+		"breadcrumbs": [
+			{ "url": "/", "title": "Главная" },
+			{ "url": "/catalog", "title": "Каталог" },
+			{ "url": "/products/smooth-metal-sheet", "title": "Гладкий металлический лист" }
+		],
+		"catalogInner": null
 	},
 	{
 		"id": "06",
 		"img": "/images/catalog/6.jpg",
-		"title": "Доборные элементы кровли",
+		"title": "Доборные элементы",
 		"url": "/catalog/additional-roof-elements",
 		"catalogInner": [
 			{
 				"id": "01",
-				"title": "Уголки крепежные",
-				"url": "/products/mounting-corners",
+				"title": "Конёк плоский",
+				"url": "/products/skate-flat",
 				"img": "/images/catalog/1.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{
 						"url": "/catalog/additional-roof-elements",
-						"title": "Доборные элементы кровли"
+						"title": "Доборные элементы"
 					},
-					{ "url": "/products/mounting-corners", "title": "Уголки крепежные" }
+					{ "url": "/products/skate-flat", "title": "Конёк плоский" }
 				],
 				"products": [
 					{
@@ -1658,19 +1030,19 @@
 			},
 			{
 				"id": "02",
-				"title": "Пластины перфорированные",
-				"url": "/products/perforated-plates",
+				"title": "Ендова верхняя плоская",
+				"url": "/products/endova-upper-flat",
 				"img": "/images/catalog/2.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{
 						"url": "/catalog/additional-roof-elements",
-						"title": "Доборные элементы кровли"
+						"title": "Доборные элементы"
 					},
 					{
-						"url": "/products/perforated-plates",
-						"title": "Пластины перфорированные"
+						"url": "/products/endova-upper-flat",
+						"title": "Ендова верхняя плоская"
 					}
 				],
 				"products": [
@@ -1706,19 +1078,19 @@
 			},
 			{
 				"id": "03",
-				"title": "Крепеж для балок и бруса",
-				"url": "/products/fasteners-for-beams-and-beams",
+				"title": "Ендова нижняя",
+				"url": "/products/lower-endova",
 				"img": "/images/catalog/3.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{
 						"url": "/catalog/additional-roof-elements",
-						"title": "Доборные элементы кровли"
+						"title": "Доборные элементы"
 					},
 					{
-						"url": "/products/fasteners-for-beams-and-beams",
-						"title": "Крепеж для балок и бруса"
+						"url": "/products/lower-endova",
+						"title": "Ендова нижняя"
 					}
 				],
 				"products": [
@@ -1754,17 +1126,17 @@
 			},
 			{
 				"id": "04",
-				"title": "Оконная пластина",
-				"url": "/products/window-plate",
+				"title": "Торцевая планка",
+				"url": "/products/end-plate",
 				"img": "/images/catalog/4.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{
 						"url": "/catalog/additional-roof-elements",
-						"title": "Доборные элементы кровли"
+						"title": "Доборные элементы"
 					},
-					{ "url": "/products/window-plate", "title": "Оконная пластина" }
+					{ "url": "/products/end-plate", "title": "Торцевая планка" }
 				],
 				"products": [
 					{
@@ -1799,19 +1171,19 @@
 			},
 			{
 				"id": "05",
-				"title": "Угловой соединитель",
-				"url": "/products/corner-connector",
+				"title": "Карнизная планка",
+				"url": "/products/cornice-plank",
 				"img": "/images/catalog/5.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{
 						"url": "/catalog/additional-roof-elements",
-						"title": "Доборные элементы кровли"
+						"title": "Доборные элементы"
 					},
 					{
-						"url": "/products/corner-connector",
-						"title": "Угловой соединитель"
+						"url": "/products/cornice-plank",
+						"title": "Карнизная планка"
 					}
 				],
 				"products": [
@@ -1847,19 +1219,19 @@
 			},
 			{
 				"id": "06",
-				"title": "Скользящая опора для стропил",
-				"url": "/products/sliding-support-for-rafters",
+				"title": "Планка примыкания",
+				"url": "/products/abutment-bar",
 				"img": "/images/catalog/6.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{
 						"url": "/catalog/additional-roof-elements",
-						"title": "Доборные элементы кровли"
+						"title": "Доборные элементы"
 					},
 					{
-						"url": "/products/sliding-support-for-rafters",
-						"title": "Скользящая опора для стропил"
+						"url": "/products/abutment-bar",
+						"title": "Планка примыкания"
 					}
 				],
 				"products": [
@@ -1895,19 +1267,115 @@
 			},
 			{
 				"id": "07",
-				"title": "Крепеж для гипсокартонного профиля",
-				"url": "/products/fasteners-for-drywall-profile",
+				"title": "Угол внешний/внутренний",
+				"url": "/products/external-internal-angle",
 				"img": "/images/catalog/7.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{
 						"url": "/catalog/additional-roof-elements",
-						"title": "Доборные элементы кровли"
+						"title": "Доборные элементы"
 					},
 					{
-						"url": "/products/fasteners-for-drywall-profile",
-						"title": "Крепеж для гипсокартонного профиля"
+						"url": "/products/external-internal-angle",
+						"title": "Угол внешний/внутренний"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "08",
+				"title": "Парапет",
+				"url": "/products/parapet",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/additional-roof-elements",
+						"title": "Доборные элементы"
+					},
+					{
+						"url": "/products/parapet",
+						"title": "Парапет"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "09",
+				"title": "Отлив",
+				"url": "/products/low-tide",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/additional-roof-elements",
+						"title": "Доборные элементы"
+					},
+					{
+						"url": "/products/low-tide",
+						"title": "Отлив"
 					}
 				],
 				"products": [
@@ -1951,14 +1419,14 @@
 		"catalogInner": [
 			{
 				"id": "01",
-				"title": "Уголки крепежные",
-				"url": "/products/mounting-corners",
+				"title": "Желоб 125 мм",
+				"url": "/products/gutter-125-mm",
 				"img": "/images/catalog/1.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
-					{ "url": "/products/mounting-corners", "title": "Уголки крепежные" }
+					{ "url": "/products/gutter-125-mm", "title": "Желоб 125 мм" }
 				],
 				"products": [
 					{
@@ -1993,16 +1461,16 @@
 			},
 			{
 				"id": "02",
-				"title": "Пластины перфорированные",
-				"url": "/products/perforated-plates",
+				"title": "Крепление желоба вертикальное 125 мм",
+				"url": "/products/mounting-gutter-vertical-125-mm",
 				"img": "/images/catalog/2.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
 					{
-						"url": "/products/perforated-plates",
-						"title": "Пластины перфорированные"
+						"url": "/products/mounting-gutter-vertical-125-mm",
+						"title": "Крепление желоба вертикальное 125 мм"
 					}
 				],
 				"products": [
@@ -2038,16 +1506,16 @@
 			},
 			{
 				"id": "03",
-				"title": "Крепеж для балок и бруса",
-				"url": "/products/fasteners-for-beams-and-beams",
+				"title": "Крепление желоба карнизное 125 мм",
+				"url": "/products/mounting-gutter-cornice-125-mm",
 				"img": "/images/catalog/3.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
 					{
-						"url": "/products/fasteners-for-beams-and-beams",
-						"title": "Крепеж для балок и бруса"
+						"url": "/products/mounting-gutter-cornice-125-mm",
+						"title": "Крепление желоба карнизное 125 мм"
 					}
 				],
 				"products": [
@@ -2083,14 +1551,14 @@
 			},
 			{
 				"id": "04",
-				"title": "Оконная пластина",
-				"url": "/products/window-plate",
+				"title": "Усилитель крепления желоба",
+				"url": "/products/chute-mounting-amplifier",
 				"img": "/images/catalog/4.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
-					{ "url": "/products/window-plate", "title": "Оконная пластина" }
+					{ "url": "/products/chute-mounting-amplifier", "title": "Усилитель крепления желоба" }
 				],
 				"products": [
 					{
@@ -2125,16 +1593,16 @@
 			},
 			{
 				"id": "05",
-				"title": "Угловой соединитель",
-				"url": "/products/corner-connector",
+				"title": "Желоб угловой 90°",
+				"url": "/products/trough-90",
 				"img": "/images/catalog/5.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
 					{
-						"url": "/products/corner-connector",
-						"title": "Угловой соединитель"
+						"url": "/products/trough-90",
+						"title": "Желоб угловой 90°"
 					}
 				],
 				"products": [
@@ -2170,16 +1638,16 @@
 			},
 			{
 				"id": "06",
-				"title": "Скользящая опора для стропил",
-				"url": "/products/sliding-support-for-rafters",
+				"title": "Соединитель желоба 125 мм",
+				"url": "/products/gutter-connector-125-mm",
 				"img": "/images/catalog/6.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
 					{
-						"url": "/products/sliding-support-for-rafters",
-						"title": "Скользящая опора для стропил"
+						"url": "/products/gutter-connector-125-mm",
+						"title": "Соединитель желоба 125 мм"
 					}
 				],
 				"products": [
@@ -2215,16 +1683,376 @@
 			},
 			{
 				"id": "07",
-				"title": "Крепеж для гипсокартонного профиля",
-				"url": "/products/fasteners-for-drywall-profile",
+				"title": "Заглушка 125 мм",
+				"url": "/products/plug-125-mm",
 				"img": "/images/catalog/7.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
 					{
-						"url": "/products/fasteners-for-drywall-profile",
-						"title": "Крепеж для гипсокартонного профиля"
+						"url": "/products/plug-125-mm",
+						"title": "Заглушка 125 мм"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "08",
+				"title": "Воронка выпускная 100 мм",
+				"url": "/products/outlet-funnel-100-mm",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
+					{
+						"url": "/products/outlet-funnel-100-mm",
+						"title": "Воронка выпускная 100 мм"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "09",
+				"title": "Воронка водосборная 100 мм",
+				"url": "/products/water-collecting-funnel-100-mm",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
+					{
+						"url": "/products/water-collecting-funnel-100-mm",
+						"title": "Воронка водосборная 100 мм"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "10",
+				"title": "Крепление трубы (саморез)",
+				"url": "/products/pipe-mounting-self-tapping-screw",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
+					{
+						"url": "/products/pipe-mounting-self-tapping-screw",
+						"title": "Крепление трубы (саморез)"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "11",
+				"title": "Крепление трубы (лапка)",
+				"url": "/products/pipe-mounting-foot",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
+					{
+						"url": "/products/pipe-mounting-foot",
+						"title": "Крепление трубы (лапка)"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "12",
+				"title": "Колено гнутое 100 мм",
+				"url": "/products/bent-knee-100-mm",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
+					{
+						"url": "/products/bent-knee-100-mm",
+						"title": "Колено гнутое 100 мм"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "13",
+				"title": "Труба соединительная 100 мм",
+				"url": "/products/connecting-pipe-100-mm",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
+					{
+						"url": "/products/connecting-pipe-100-mm",
+						"title": "Труба соединительная 100 мм"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "14",
+				"title": "Тройник трубы 100 мм",
+				"url": "/products/pipe-tee-100-mm",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
+					{
+						"url": "/products/pipe-tee-100-mm",
+						"title": "Тройник трубы 100 мм"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "15",
+				"title": "Отмет гнутый 100 мм",
+				"url": "/products/cast-bent-100-mm",
+				"img": "/images/catalog/7.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{ "url": "/catalog/drainage-system", "title": "Водосточная система" },
+					{
+						"url": "/products/cast-bent-100-mm",
+						"title": "Отмет гнутый 100 мм"
 					}
 				],
 				"products": [
@@ -2263,22 +2091,22 @@
 	{
 		"id": "08",
 		"img": "/images/catalog/8.jpg",
-		"title": "Сопутствующие товары",
-		"url": "/catalog/related-products",
+		"title": "Элементы безопасности кровли",
+		"url": "/catalog/roof-safety-elements",
 		"catalogInner": [
 			{
 				"id": "01",
-				"title": "Уголки крепежные",
-				"url": "/products/mounting-corners",
+				"title": "Снегозадержатели",
+				"url": "/products/snow-holders",
 				"img": "/images/catalog/1.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{
-						"url": "/catalog/related-products",
-						"title": "Сопутствующие товары"
+						"url": "/catalog/roof-safety-elements",
+						"title": "Элементы безопасности кровли"
 					},
-					{ "url": "/products/mounting-corners", "title": "Уголки крепежные" }
+					{ "url": "/products/snow-holders", "title": "Снегозадержатели" }
 				],
 				"products": [
 					{
@@ -2313,19 +2141,578 @@
 			},
 			{
 				"id": "02",
-				"title": "Пластины перфорированные",
-				"url": "/products/perforated-plates",
-				"img": "/images/catalog/2.jpg",
+				"title": "Ограждение кровельное ",
+				"url": "/products/roofing-fencing",
+				"img": "/images/catalog/1.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{
-						"url": "/catalog/related-products",
-						"title": "Сопутствующие товары"
+						"url": "/catalog/roof-safety-elements",
+						"title": "Элементы безопасности кровли"
+					},
+					{ "url": "/products/roofing-fencing", "title": "Ограждение кровельное " }
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
 					},
 					{
-						"url": "/products/perforated-plates",
-						"title": "Пластины перфорированные"
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "09",
+		"img": "/images/catalog/8.jpg",
+		"title": "Труба профильная",
+		"url": "/catalog/profile-pipe",
+		"catalogInner": [
+			{
+				"id": "01",
+				"title": "Труба профильная 20х20",
+				"url": "/products/profile-pipe-20x20",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/profile-pipe",
+						"title": "Труба профильная"
+					},
+					{ "url": "/products/profile-pipe-20x20", "title": "Труба профильная 20х20" }
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "02",
+				"title": "Труба профильная 40х20",
+				"url": "/products/profile-pipe-40x20",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/profile-pipe",
+						"title": "Труба профильная"
+					},
+					{ "url": "/products/profile-pipe-40x20", "title": "Труба профильная 40х20" }
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "03",
+				"title": "Труба профильная 40х40",
+				"url": "/products/profile-pipe-40x40",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/profile-pipe",
+						"title": "Труба профильная"
+					},
+					{ "url": "/products/profile-pipe-40x40", "title": "Труба профильная 40х40" }
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "04",
+				"title": "Труба профильная 50х25",
+				"url": "/products/profile-pipe-50х25",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/profile-pipe",
+						"title": "Труба профильная"
+					},
+					{ "url": "/products/profile-pipe-50х25", "title": "Труба профильная 50х25" }
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "05",
+				"title": "Труба профильная 60х30",
+				"url": "/products/profile-pipe-60х30",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/profile-pipe",
+						"title": "Труба профильная"
+					},
+					{ "url": "/products/profile-pipe-60х30", "title": "Труба профильная 60х30" }
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "06",
+				"title": "Труба профильная 60х40",
+				"url": "/products/profile-pipe-60х40",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/profile-pipe",
+						"title": "Труба профильная"
+					},
+					{ "url": "/products/profile-pipe-60х40", "title": "Труба профильная 60х40" }
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "07",
+				"title": "Труба профильная 60х60",
+				"url": "/products/profile-pipe-60х60",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/profile-pipe",
+						"title": "Труба профильная"
+					},
+					{ "url": "/products/profile-pipe-60х60", "title": "Труба профильная 60х60" }
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "08",
+				"title": "Труба профильная 80х40",
+				"url": "/products/profile-pipe-80х40",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/profile-pipe",
+						"title": "Труба профильная"
+					},
+					{ "url": "/products/profile-pipe-80х40", "title": "Труба профильная 80х40" }
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "09",
+				"title": "Труба профильная 80х80",
+				"url": "/products/profile-pipe-80х80",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/profile-pipe",
+						"title": "Труба профильная"
+					},
+					{ "url": "/products/profile-pipe-80х80", "title": "Труба профильная 80х80" }
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "10",
+				"title": "Труба профильная 100х100",
+				"url": "/products/profile-pipe-100х100",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/profile-pipe",
+						"title": "Труба профильная"
+					},
+					{ "url": "/products/profile-pipe-100х100", "title": "Труба профильная 100х100" }
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "10",
+		"img": "/images/catalog/8.jpg",
+		"title": "Саморезы",
+		"url": "/catalog/self-tapping-screws",
+		"catalogInner": [
+			{
+				"id": "01",
+				"title": "Кровельные саморезы по дереву",
+				"url": "/products/roofing-self-tapping-screws-on-wood",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/self-tapping-screws",
+						"title": "Саморезы"
+					},
+					{
+						"url": "/products/roofing-self-tapping-screws-on-wood",
+						"title": "Кровельные саморезы по дереву"
+					}
+				],
+				"products": [
+					{
+						"id": "01",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "02",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "03",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					},
+					{
+						"id": "04",
+						"url": "/product/01",
+						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
+						"price": 774,
+						"text": "Уголок крепежный анкерный"
+					}
+				]
+			},
+			{
+				"id": "02",
+				"title": "Кровельные саморезы по металлу",
+				"url": "/products/roofing-self-tapping-screws-on-metal",
+				"img": "/images/catalog/1.jpg",
+				"breadcrumbs": [
+					{ "url": "/", "title": "Главная" },
+					{ "url": "/catalog", "title": "Каталог" },
+					{
+						"url": "/catalog/self-tapping-screws",
+						"title": "Саморезы"
+					},
+					{
+						"url": "/products/roofing-self-tapping-screws-on-metal",
+						"title": "Кровельные саморезы по металлу"
 					}
 				],
 				"products": [
@@ -2361,208 +2748,19 @@
 			},
 			{
 				"id": "03",
-				"title": "Крепеж для балок и бруса",
-				"url": "/products/fasteners-for-beams-and-beams",
-				"img": "/images/catalog/3.jpg",
+				"title": "Саморезы с пресс-шайбой",
+				"url": "/products/self-tapping-screws-with-a-press-washer",
+				"img": "/images/catalog/1.jpg",
 				"breadcrumbs": [
 					{ "url": "/", "title": "Главная" },
 					{ "url": "/catalog", "title": "Каталог" },
 					{
-						"url": "/catalog/related-products",
-						"title": "Сопутствующие товары"
+						"url": "/catalog/self-tapping-screws",
+						"title": "Саморезы"
 					},
 					{
-						"url": "/products/fasteners-for-beams-and-beams",
-						"title": "Крепеж для балок и бруса"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "04",
-				"title": "Оконная пластина",
-				"url": "/products/window-plate",
-				"img": "/images/catalog/4.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{
-						"url": "/catalog/related-products",
-						"title": "Сопутствующие товары"
-					},
-					{ "url": "/products/window-plate", "title": "Оконная пластина" }
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "05",
-				"title": "Угловой соединитель",
-				"url": "/products/corner-connector",
-				"img": "/images/catalog/5.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{
-						"url": "/catalog/related-products",
-						"title": "Сопутствующие товары"
-					},
-					{
-						"url": "/products/corner-connector",
-						"title": "Угловой соединитель"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "06",
-				"title": "Скользящая опора для стропил",
-				"url": "/products/sliding-support-for-rafters",
-				"img": "/images/catalog/6.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{
-						"url": "/catalog/related-products",
-						"title": "Сопутствующие товары"
-					},
-					{
-						"url": "/products/sliding-support-for-rafters",
-						"title": "Скользящая опора для стропил"
-					}
-				],
-				"products": [
-					{
-						"id": "01",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "02",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "03",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					},
-					{
-						"id": "04",
-						"url": "/product/01",
-						"imgs": ["/images/product/1.jpg", "/images/product/1.jpg", "/images/product/1.jpg"],
-						"price": 774,
-						"text": "Уголок крепежный анкерный"
-					}
-				]
-			},
-			{
-				"id": "07",
-				"title": "Крепеж для гипсокартонного профиля",
-				"url": "/products/fasteners-for-drywall-profile",
-				"img": "/images/catalog/7.jpg",
-				"breadcrumbs": [
-					{ "url": "/", "title": "Главная" },
-					{ "url": "/catalog", "title": "Каталог" },
-					{
-						"url": "/catalog/related-products",
-						"title": "Сопутствующие товары"
-					},
-					{
-						"url": "/products/fasteners-for-drywall-profile",
-						"title": "Крепеж для гипсокартонного профиля"
+						"url": "/products/self-tapping-screws-with-a-press-washer",
+						"title": "Саморезы с пресс-шайбой"
 					}
 				],
 				"products": [
