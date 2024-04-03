@@ -11,10 +11,15 @@ import { ArrowRightIcon, MinusIcon, PlusIcon } from '@/shared/icons';
 import { Button, Select } from '@/shared/ui';
 
 const props = defineProps(['product']);
+
 const currentSlilde = ref(0);
 const swiperRef = ref(null);
 const currentColor = ref(0);
+const width = ref(props.product.width ? props.product.width[0].label : null);
+const length = ref(props.product.length ? props.product.length[0]?.label : null);
+const type = ref(props.product.typeOfCoating ? props.product.typeOfCoating[0]?.label : null);
 const count = ref(props.product.count);
+
 const handleChangeCount = type => {
 	if (type === 'inc') {
 		count.value++;
@@ -42,16 +47,16 @@ const handleSelectColor = index => {
 					<div class="select-row">
 						<div class="select-wrapper">
 							<p>Ширина</p>
-							<Select name="width" :options="product.width" />
+							<Select v-model="width" name="width" :options="product.width" />
 						</div>
 						<div class="select-wrapper">
 							<p>Длина</p>
-							<Select name="width" :options="product.length" />
+							<Select name="length" :options="product.length" />
 						</div>
 					</div>
 					<div class="select-wrapper">
 						<p>Тип покрытия</p>
-						<Select name="width" :options="product.typeOfCoating" />
+						<Select name="type" :options="product.typeOfCoating" />
 					</div>
 				</div>
 				<div class="colors">
@@ -112,6 +117,9 @@ const handleSelectColor = index => {
 					:count="count"
 					:changeCount="handleChangeCount"
 					:isTotal="true"
+					:width="width"
+					:length="length"
+					:type="type"
 				/>
 			</div>
 		</div>

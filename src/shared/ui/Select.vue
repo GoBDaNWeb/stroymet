@@ -1,11 +1,19 @@
 <script setup>
-import { ref } from 'vue';
+import { computed, defineEmits, defineProps, ref } from 'vue';
 
-const props = defineProps(['options']);
+const props = defineProps(['options', 'modelValue']);
 const selected = ref(null);
 const isActive = ref(null);
 
 const selectedValue = ref(props.options[0].label);
+
+const emit = defineEmits(['update:modelValue']);
+const value = computed({
+	get: () => props.modelValue,
+	set: val => emit('update:modelValue', val)
+});
+
+defineExpose({ value });
 
 const handleOpenSelect = () => {
 	isActive.value = !isActive.value;
@@ -39,7 +47,12 @@ const handleSelectValue = index => {
 		<div class="selector-content">
 			<div class="selector-list">
 				<label @click="handleSelectValue(index)" v-for="(option, index) in options" :key="index">
-					<input type="radio" value="{{option.value}}" :name="name" />
+					<input
+						type="radio"
+						@input="$emit('update:modelValue', option.value)"
+						value="{{option.value}}"
+						:name="name"
+					/>
 					<span>{{ option.label }}</span>
 				</label>
 			</div>

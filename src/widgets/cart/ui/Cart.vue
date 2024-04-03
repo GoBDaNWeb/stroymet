@@ -32,10 +32,14 @@ const handleSuccessModal = () => {
 	}
 };
 
-watch([name, phone], () => {
-	nameError.value = false;
-	phoneError.value = false;
-});
+const handleClearError = type => {
+	if (type === 'tel') {
+		phoneError.value = false;
+	} else {
+		nameError.value = false;
+	}
+};
+console.log(cart.cartProducts);
 </script>
 
 <template>
@@ -54,6 +58,9 @@ watch([name, phone], () => {
 						:price="product.price"
 						:count="product.count"
 						:url="product.url"
+						:width="product.width"
+						:length="product.length"
+						:type="product.type"
 					/>
 				</div>
 				<div v-else class="cart-alert">
@@ -74,8 +81,19 @@ watch([name, phone], () => {
 						:class="cart.getProductsCount > 0 ? '' : 'disabled'"
 					>
 						<div class="inputs">
-							<Input v-model="name" :error="nameError" placeholder="Ваше имя" />
-							<Input v-model="phone" :error="phoneError" type="tel" placeholder="Телефон" />
+							<Input
+								v-model="name"
+								@input="handleClearError('name')"
+								:error="nameError"
+								placeholder="Ваше имя"
+							/>
+							<Input
+								v-model="phone"
+								@input="handleClearError('tel')"
+								:error="phoneError"
+								type="tel"
+								placeholder="Телефон"
+							/>
 						</div>
 						<p>
 							Нажимая кнопку «Отправить» вы даёте своё согласие с

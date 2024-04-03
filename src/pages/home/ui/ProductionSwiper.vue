@@ -102,6 +102,10 @@ const pagination = ref(null);
 	.top {
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: $tab) {
+			flex-direction: column;
+			gap: 20px;
+		}
 		h3 {
 			color: var(--gray-color);
 			text-transform: uppercase;
@@ -117,9 +121,6 @@ const pagination = ref(null);
 			display: flex;
 			align-items: center;
 			gap: 1px;
-			@media (max-width: $tab) {
-				display: none;
-			}
 		}
 	}
 	.pagination {

@@ -7,7 +7,17 @@ import { useCartStore } from '@/entities/cart-store';
 import { MinusIcon, PlusIcon, RemoveIcon } from '@/shared/icons';
 import { Button } from '@/shared/ui';
 
-const props = defineProps(['id', 'img', 'title', 'price', 'count', 'url']);
+const props = defineProps([
+	'id',
+	'img',
+	'title',
+	'price',
+	'count',
+	'url',
+	'width',
+	'length',
+	'type'
+]);
 const count = ref(props.count);
 const cartStore = useCartStore();
 
@@ -27,6 +37,8 @@ const handleChangeCount = type => {
 const handleRemoveProduct = () => {
 	cartStore.removeProduct(props.id);
 };
+
+const conditionSettings = props.width && props.length && props.type;
 </script>
 
 <template>
@@ -36,6 +48,20 @@ const handleRemoveProduct = () => {
 		</RouterLink>
 		<div class="product-info">
 			<h6 class="info">{{ title }}</h6>
+			<ul class="settings" v-if="conditionSettings">
+				<li>
+					<span>Ширина общая</span>
+					<p>{{ width }}</p>
+				</li>
+				<li>
+					<span>Длина</span>
+					<p>{{ length }}</p>
+				</li>
+				<li>
+					<span>Тип покрытия</span>
+					<p>{{ type }}</p>
+				</li>
+			</ul>
 			<div class="counter-wrapper">
 				<span>{{ price }} руб./шт.</span>
 				<div class="counter">
@@ -114,6 +140,42 @@ const handleRemoveProduct = () => {
 				line-height: 16px;
 			}
 		}
+		.settings {
+			margin-top: 15px;
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			li {
+				display: grid;
+				grid-template-columns: 0.3fr 1fr;
+				gap: 5px;
+				@media (max-width: $tab-sm) {
+					grid-template-columns: 0.6fr 1fr;
+				}
+				@media (max-width: $mob) {
+					grid-template-columns: 1fr 1fr;
+				}
+				span {
+					color: var(--gray-back-color);
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 18px;
+					white-space: nowrap;
+					width: 100%;
+					display: block;
+					@media (max-width: $mob) {
+						min-width: 100px;
+					}
+				}
+				p {
+					color: var(--gray-color);
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 18px;
+					white-space: nowrap;
+				}
+			}
+		}
 		.counter-wrapper {
 			margin-top: 30px;
 			display: grid;
@@ -130,8 +192,14 @@ const handleRemoveProduct = () => {
 				font-size: 18px;
 				line-height: 18px;
 				font-weight: 400;
-				text-align: center;
+				text-align: left;
 				display: block;
+				&:last-child {
+					text-align: center;
+					@media (max-width: $tab) {
+						text-align: left;
+					}
+				}
 				@media (max-width: $tab) {
 					font-size: 14px;
 					line-height: 14px;

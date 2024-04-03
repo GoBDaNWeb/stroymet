@@ -5,11 +5,13 @@ import { Pin } from '@/entities/pin';
 <template>
 	<div class="hero">
 		<!-- <img src="/images/home/hero.jpg" alt="" /> -->
-		<div class="pins container">
-			<Pin direction="left" />
-			<Pin direction="right" />
-			<Pin direction="right" />
-		</div>
+		<!-- <div class="pins container">
+			<Pin direction="left" title="Забор " />
+			<Pin direction="left" title="Водосточная система" />
+			<Pin direction="right" title="⁠Доборные элементы" />
+			<Pin direction="right" title="⁠Снегозадержатели " />
+			<Pin direction="right" title="Кровля " />
+		</div> -->
 		<div class="container">
 			<div class="hero-inner">
 				<h1>кровельные <br />и фасадные материалы <br />от производителя</h1>
@@ -34,7 +36,7 @@ import { Pin } from '@/entities/pin';
 		object-fit: cover;
 	}
 	.pins {
-		z-index: 2;
+		z-index: 4;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -42,14 +44,14 @@ import { Pin } from '@/entities/pin';
 		bottom: 0;
 		& > div:nth-child(1) {
 			position: absolute;
-			top: 27%;
-			left: 30%;
+			top: 59%;
+			left: 2%;
 			z-index: 3;
 		}
 		& > div:nth-child(2) {
 			position: absolute;
-			top: 37%;
-			left: 50%;
+			top: 38%;
+			left: 33%;
 			z-index: 1;
 			@media (max-width: $tab) {
 				top: 47%;

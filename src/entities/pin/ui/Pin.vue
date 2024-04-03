@@ -5,8 +5,7 @@ import { RouterLink } from 'vue-router';
 import { ArrowRightIcon, PlusIcon } from '@/shared/icons';
 import { Button } from '@/shared/ui';
 
-defineProps(['direction']);
-
+defineProps(['direction', 'title']);
 const isOpen = ref(false);
 
 const handleOpenPin = () => {
@@ -21,7 +20,7 @@ const handleClosePin = () => {
 	<div class="pin" @mouseleave="handleClosePin" :class="`${direction} ${isOpen ? 'active' : ''}`">
 		<Button @click="handleOpenPin" variable="nav"><PlusIcon /></Button>
 		<div class="pin-content">
-			<h4>кровля</h4>
+			<h4>{{ title }}</h4>
 			<p>Небольшой абзац текста про кровельные материалы от производителя.</p>
 			<div class="links">
 				<RouterLink to="/catalog"><ArrowRightIcon />металлочерепица</RouterLink>
@@ -96,7 +95,7 @@ const handleClosePin = () => {
 		position: absolute;
 		pointer-events: none;
 		@media (max-width: $tab) {
-			width: 280px;
+			width: 200px;
 			padding: 20px;
 		}
 		h4 {

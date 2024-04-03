@@ -85,7 +85,7 @@ const pagination = ref(null);
 		gap: 1px;
 		z-index: 2;
 		@media (max-width: $tab) {
-			display: none;
+			bottom: 18px;
 		}
 	}
 	.pagination {

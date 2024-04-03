@@ -13,6 +13,17 @@ const menu = useMenuStore();
 watch(router, () => {
 	menu.isActive ? menu.handleOpenMenu() : null;
 });
+
+watch(
+	() => menu.isActive,
+	() => {
+		if (menu.isActive) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.removeAttribute('style');
+		}
+	}
+);
 </script>
 
 <template>

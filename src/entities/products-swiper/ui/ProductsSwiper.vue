@@ -83,8 +83,7 @@ const pagination = ref(null);
 	overflow: hidden;
 	border-top: 1px solid var(--light-gray-color);
 	padding-top: 100px;
-	padding-right: 20px;
-	padding-left: 20px;
+
 	@media (max-width: $tab) {
 		padding-top: 80px;
 		margin-top: 80px;
@@ -92,6 +91,10 @@ const pagination = ref(null);
 	.top {
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: $tab) {
+			flex-direction: column;
+			gap: 20px;
+		}
 		h3 {
 			color: var(--gray-color);
 			text-transform: uppercase;
@@ -107,9 +110,6 @@ const pagination = ref(null);
 			display: flex;
 			align-items: center;
 			gap: 1px;
-			@media (max-width: $tab) {
-				display: none;
-			}
 		}
 	}
 	.pagination {
@@ -119,6 +119,7 @@ const pagination = ref(null);
 			justify-content: flex-start;
 			margin-top: 20px;
 			margin-bottom: 80px;
+			padding-left: 20px;
 		}
 	}
 	.products-swiper {

@@ -22,6 +22,9 @@ defineProps(['title', 'productList', 'haveBtn']);
 				:url="product.url"
 				:price="product.price"
 				:count="product.count"
+				:width="product.width ? product.width[0].label : null"
+				:length="product.length ? product.length[0].label : null"
+				:type="product.typeOfCoating ? product.typeOfCoating[0].label : null"
 			/>
 		</div>
 		<div class="button-wrapper" v-if="productList.length > 8">

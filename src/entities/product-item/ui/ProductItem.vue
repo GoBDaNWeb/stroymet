@@ -14,7 +14,17 @@ import { useCartStore } from '@/entities/cart-store';
 import { ArrowRightIcon, MinusIcon, PlusIcon } from '@/shared/icons';
 import { Button } from '@/shared/ui';
 
-const props = defineProps(['id', 'imgs', 'price', 'text', 'url', 'count']);
+const props = defineProps([
+	'id',
+	'imgs',
+	'price',
+	'text',
+	'url',
+	'count',
+	'width',
+	'length',
+	'type'
+]);
 const modules = ref([Pagination]);
 
 const cart = useCartStore();
@@ -30,17 +40,24 @@ const setSwiperRef = swiper => {
 const handleSetSlide = slide => {
 	currentSlilde.value = slide;
 };
+console.log(cart.getProduct(props.id));
 
 const handleChangeCount = type => {
 	if (type === 'inc') {
-		count.value++;
-		cart.increaceProductCount(props.id);
+		if (cart.getProduct(props.id)) {
+			cart.increaceProductCount(props.id);
+		} else {
+			count.value++;
+		}
 	} else {
 		if (count.value == 1) {
 			return;
 		}
-		count.value--;
-		cart.decreaceProductCount(props.id);
+		if (cart.getProduct(props.id)) {
+			cart.decreaceProductCount(props.id);
+		} else {
+			count.value--;
+		}
 	}
 };
 
@@ -99,6 +116,9 @@ onMounted(() => {
 			:url="url"
 			:count="currentProduct.product ? currentProduct.product.count : count"
 			:changeCount="handleChangeCount"
+			:width="width"
+			:length="length"
+			:type="type"
 		/>
 	</div>
 </template>

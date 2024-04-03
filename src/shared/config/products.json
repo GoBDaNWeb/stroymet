@@ -9,9 +9,44 @@
 	{
 		"id": "02",
 		"url": "/product/02",
-		"imgs": ["/images/product/2.jpg", "/images/product/1.jpg", "/images/product/2.jpg", "/images/product/1.jpg"],
+		"imgs": [
+			"/images/product/2.jpg",
+			"/images/product/1.jpg",
+			"/images/product/2.jpg",
+			"/images/product/1.jpg"
+		],
 		"price": 774,
-		"text": "Уголок крепежный анкерный"
+		"text": "Уголок крепежный анкерный",
+		"settings": true,
+		"width": [
+			{ "value": "1180", "label": "1180 мм" },
+			{ "value": "1080", "label": "1080 мм" },
+			{ "value": "980", "label": "980 мм" },
+			{ "value": "880", "label": "880 мм" }
+		],
+		"length": [
+			{ "value": "6", "label": "6 м" },
+			{ "value": "5", "label": "5 м" },
+			{ "value": "4", "label": "4 м" },
+			{ "value": "3", "label": "3 м" }
+		],
+		"typeOfCoating": [
+			{ "value": "TWEED50", "label": "TWEED50" },
+			{ "value": "TWEED40", "label": "TWEED40" },
+			{ "value": "TWEED30", "label": "TWEED30" },
+			{ "value": "TWEED20", "label": "TWEED20" }
+		],
+		"colors": [
+			{ "color": "#175B9B", "title": "1014" },
+			{ "color": "#58A36D", "title": "1014" },
+			{ "color": "#9B5E17", "title": "1014" },
+			{ "color": "#9D4B32", "title": "1014" },
+			{ "color": "#5C3B31", "title": "1014" },
+			{ "color": "#FFFFFF", "title": "1014" },
+			{ "color": "#5E5E5E", "title": "1014" },
+			{ "color": "#2B2B2B", "title": "1014" },
+			{ "color": "#000000", "title": "1014" }
+		]
 	},
 	{
 		"id": "03",

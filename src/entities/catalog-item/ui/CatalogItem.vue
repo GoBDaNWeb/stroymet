@@ -89,7 +89,12 @@ defineProps(['img', 'index', 'title', 'url']);
 			line-height: 16px;
 			margin-top: 20px;
 			margin-bottom: 15px;
-			word-break: break-all;
+		}
+		@media (max-width: $mob) {
+			font-size: 12px;
+			line-height: 14px;
+			margin-top: 20px;
+			margin-bottom: 15px;
 		}
 	}
 	button {

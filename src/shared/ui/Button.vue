@@ -35,6 +35,14 @@ button.nav {
 	&:hover {
 		background: var(--blue-hover-color);
 	}
+	@media (max-width: $tab) {
+		width: 40px;
+		height: 40px;
+		svg {
+			width: 50%;
+			height: 50%;
+		}
+	}
 }
 button.primary {
 	background: var(--blue-color);

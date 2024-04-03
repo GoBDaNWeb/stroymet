@@ -4,7 +4,19 @@ import { useCartStore } from '@/entities/cart-store';
 import { ArrowRightIcon, MinusIcon, PlusIcon } from '@/shared/icons';
 import { Button } from '@/shared/ui';
 
-const props = defineProps(['id', 'text', 'price', 'img', 'url', 'count', 'changeCount', 'isTotal']);
+const props = defineProps([
+	'id',
+	'text',
+	'price',
+	'img',
+	'url',
+	'count',
+	'changeCount',
+	'isTotal',
+	'width',
+	'length',
+	'type'
+]);
 const cartStore = useCartStore();
 
 const handleSetProduct = () => {
@@ -14,7 +26,10 @@ const handleSetProduct = () => {
 		price: props.price,
 		img: props.img,
 		url: props.url,
-		count: props.count
+		count: props.count,
+		width: props.width ? props.width : null,
+		length: props.length ? props.length : null,
+		type: props.type ? props.type : null
 	};
 	cartStore.setProduct(product);
 	localStorage.setItem('products', JSON.stringify([...cartStore.cartProducts]));

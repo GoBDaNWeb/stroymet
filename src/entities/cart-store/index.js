@@ -30,6 +30,12 @@ export const useCartStore = defineStore('cart', {
 			const foundIndex = this.cartProducts.findIndex(item => item.id === id);
 			this.cartProducts[foundIndex].count--;
 			localStorage.setItem('products', JSON.stringify([...this.cartProducts]));
+		},
+		getProduct(id) {
+			const filter = this.cartProducts.filter(product => {
+				return product.id === id;
+			});
+			return filter.length > 0;
 		}
 	},
 	getters: {
