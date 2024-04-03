@@ -68,7 +68,7 @@ defineProps(['title', 'catalogList', 'haveBtn']);
 	.catalog-content {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
-		@media (max-width: $desktop-md2) {
+		@media (max-width: $desktop-md-2) {
 			grid-template-columns: repeat(4, 1fr);
 		}
 		@media (max-width: $desktop-sm) {
