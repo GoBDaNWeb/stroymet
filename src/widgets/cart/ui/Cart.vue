@@ -13,7 +13,6 @@ const modal = useModalStore();
 
 const router = useRouter();
 const cart = useCartStore();
-const total = ref(0);
 
 const name = ref('');
 const nameError = ref(false);
@@ -59,8 +58,7 @@ const handleClearError = type => {
 						:url="product.url"
 						:width="product.width"
 						:length="product.length"
-						:type="product.type"
-						:color="product.color"
+						:thickness="product.thickness"
 					/>
 				</div>
 				<div v-else class="cart-alert">

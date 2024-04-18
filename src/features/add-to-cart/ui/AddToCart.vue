@@ -15,8 +15,8 @@ const props = defineProps([
 	'isTotal',
 	'width',
 	'length',
-	'color',
-	'type'
+	'thickness',
+	'specifications'
 ]);
 const cartStore = useCartStore();
 
@@ -30,8 +30,7 @@ const handleSetProduct = () => {
 		count: props.count,
 		width: props.width ? props.width : null,
 		length: props.length ? props.length : null,
-		type: props.type ? props.type : null,
-		color: props.color ? props.color : null
+		thickness: props.thickness ? props.thickness : null
 	};
 	cartStore.setProduct(product);
 	localStorage.setItem('products', JSON.stringify([...cartStore.cartProducts]));
@@ -51,7 +50,9 @@ const isInCart = () => {
 
 <template>
 	<div class="add-to-cart">
-		<span class="total" v-if="isTotal">{{ price * count }} руб.</span>
+		<span class="total" v-if="isTotal">
+			{{ specifications ? 'от' : '' }} {{ price * count }} руб.
+		</span>
 		<div class="buttons">
 			<div class="counter">
 				<Button variable="count" @click="changeCount('dec')">

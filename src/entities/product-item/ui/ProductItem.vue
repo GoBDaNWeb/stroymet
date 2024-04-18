@@ -23,11 +23,10 @@ const props = defineProps([
 	'count',
 	'width',
 	'length',
-	'type',
-	'color'
+	'thickness',
+	'specifications'
 ]);
 const modules = ref([Pagination]);
-console.log('props',props);
 const cart = useCartStore();
 const currentSlilde = ref(0);
 const swiperRef = ref(null);
@@ -106,7 +105,7 @@ onMounted(() => {
 			<div ref="pagination" class="pagination"></div>
 		</div>
 
-		<span>{{ price * count }} руб.</span>
+		<span>{{ specifications ? 'от' : '' }} {{ price * count }} руб.</span>
 		<p>{{ text }}</p>
 		<AddToCart
 			:id="id"
@@ -118,7 +117,7 @@ onMounted(() => {
 			:changeCount="handleChangeCount"
 			:width="width"
 			:length="length"
-			:type="type"
+			:thickness="thickness"
 			:color="color"
 		/>
 	</div>

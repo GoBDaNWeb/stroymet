@@ -17,10 +17,13 @@
 			"/images/product/1.jpg",
 			"/images/product/1.jpg"
 		],
-		"settings": false,
+		"specifications": true,
 		"price": 774,
 		"url": "/product/01",
-		"count": 1
+		"count": 1,
+		"width": "35 мм",
+		"length": "50 мм",
+		"thickness": "2 мм"
 	},
 	{
 		"id": "02",
@@ -33,40 +36,14 @@
 			{ "url": "/product/02", "title": "Металлочерепица МК 350 TWEED50" }
 		],
 		"imgs": [
-			[
-				"/images/product/2.jpg",
-				"/images/product/2.jpg",
-				"/images/product/2.jpg",
-				"/images/product/2.jpg",
-				"/images/product/2.jpg",
-				"/images/product/2.jpg"
-			],
-			[
-				"/images/product/3.jpg",
-				"/images/product/3.jpg",
-				"/images/product/3.jpg",
-				"/images/product/3.jpg"
-			]
+			"/images/product/2.jpg",
+			"/images/product/2.jpg",
+			"/images/product/2.jpg",
+			"/images/product/2.jpg",
+			"/images/product/2.jpg",
+			"/images/product/2.jpg"
 		],
-		"settings": true,
-		"width": [
-			{ "value": "1180", "label": "1180 мм" },
-			{ "value": "1080", "label": "1080 мм" },
-			{ "value": "980", "label": "980 мм" },
-			{ "value": "880", "label": "880 мм" }
-		],
-		"length": [
-			{ "value": "6", "label": "6 м" },
-			{ "value": "5", "label": "5 м" },
-			{ "value": "4", "label": "4 м" },
-			{ "value": "3", "label": "3 м" }
-		],
-		"typeOfCoating": [
-			{ "value": "TWEED50", "label": "TWEED50" },
-			{ "value": "TWEED40", "label": "TWEED40" },
-			{ "value": "TWEED30", "label": "TWEED30" },
-			{ "value": "TWEED20", "label": "TWEED20" }
-		],
+		"specifications": false,
 		"colors": [
 			{ "color": "#175B9B", "title": "1014" },
 			{ "color": "#58A36D", "title": "1014" },

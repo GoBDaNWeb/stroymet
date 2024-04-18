@@ -16,8 +16,7 @@ const props = defineProps([
 	'url',
 	'width',
 	'length',
-	'type',
-	'color'
+	'thickness'
 ]);
 const count = ref(props.count);
 const cartStore = useCartStore();
@@ -39,7 +38,7 @@ const handleRemoveProduct = () => {
 	cartStore.removeProduct(props.id);
 };
 
-const conditionSettings = props.width && props.length && props.type && props.color;
+const conditionSettings = props.width && props.length && props.thickness;
 </script>
 
 <template>
@@ -51,7 +50,7 @@ const conditionSettings = props.width && props.length && props.type && props.col
 			<h6 class="info">{{ title }}</h6>
 			<ul class="settings" v-if="conditionSettings">
 				<li>
-					<span>Ширина общая</span>
+					<span>Ширина</span>
 					<p>{{ width }}</p>
 				</li>
 				<li>
@@ -59,19 +58,8 @@ const conditionSettings = props.width && props.length && props.type && props.col
 					<p>{{ length }}</p>
 				</li>
 				<li>
-					<span>Тип покрытия</span>
-					<p>{{ type }}</p>
-				</li>
-				<li>
-					<span>Цвет</span>
-					<div class="color-item">
-						<div class="color-wrapper">
-							<div :style="`background-color: ${color.color}`" class="color"></div>
-						</div>
-						<p>
-							{{ color.title }}
-						</p>
-					</div>
+					<span>Толщина</span>
+					<p>{{ thickness }}</p>
 				</li>
 			</ul>
 			<div class="counter-wrapper">

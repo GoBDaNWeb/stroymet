@@ -1,10 +1,12 @@
 <script setup>
+import { useCartStore } from '@/entities/cart-store';
 import { ProductItem } from '@/entities/product-item';
 
 import { DownloadIcon, PlusIcon } from '@/shared/icons';
 import { Button } from '@/shared/ui';
 
 const props = defineProps(['title', 'productList', 'haveBtn']);
+const cart = useCartStore();
 </script>
 
 <template>
@@ -22,10 +24,10 @@ const props = defineProps(['title', 'productList', 'haveBtn']);
 				:url="product.url"
 				:price="product.price"
 				:count="product.count"
-				:width="product.width ? product.width[0].label : null"
-				:length="product.length ? product.length[0].label : null"
-				:type="product.typeOfCoating ? product.typeOfCoating[0].label : null"
-				:color="product.color ? product.color : null"
+				:width="product.width"
+				:length="product.length"
+				:thickness="product.thickness"
+				:specifications="product.specifications"
 			/>
 		</div>
 		<div class="button-wrapper" v-if="productList.length > 8">

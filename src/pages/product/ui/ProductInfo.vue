@@ -15,10 +15,6 @@ const props = defineProps(['product']);
 const currentSlilde = ref(0);
 const swiperRef = ref(null);
 const currentColor = ref(0);
-const width = ref(props.product.width ? props.product.width[0].label : null);
-const length = ref(props.product.length ? props.product.length[0].label : null);
-const type = ref(props.product.typeOfCoating ? props.product.typeOfCoating[0].label : null);
-const color = ref(props.product.color ? props.product.color : null);
 const count = ref(props.product.count);
 
 const handleChangeCount = type => {
@@ -41,36 +37,33 @@ const handleSelectColor = (index, selectColor) => {
 	<div class="product-info container">
 		<h1>{{ product.title }}</h1>
 		<div class="product-info-content">
-			<ProductSwiper :imgs="product.settings ? product.imgs[currentColor] : product.imgs" />
-			<div v-if="product.settings" class="product-main-info">
+			<ProductSwiper :imgs="product.imgs" />
+			<div v-if="product.specifications" class="product-main-info">
 				<h6>Артикул <span>DF9234756</span></h6>
-				<div class="selectors">
-					<h5>выбрать характеристики</h5>
-					<div class="select-row">
-						<div class="select-wrapper">
-							<p>Ширина</p>
-							<Select v-model="width" name="width" :options="product.width" />
-						</div>
-						<div class="select-wrapper">
-							<p>Длина</p>
-							<Select v-model="length" name="length" :options="product.length" />
-						</div>
-					</div>
-					<div class="select-wrapper">
-						<p>Тип покрытия</p>
-						<Select v-model="type" name="type" :options="product.typeOfCoating" />
-					</div>
-				</div>
+				<ul>
+					<li>
+						<h6>Ширина</h6>
+						<div class="line"></div>
+						<span>{{ product.width }}</span>
+					</li>
+					<li>
+						<h6>Длина</h6>
+						<div class="line"></div>
+						<span>{{ product.length }}</span>
+					</li>
+					<li>
+						<h6>Толщина</h6>
+						<div class="line"></div>
+						<span>{{ product.thickness }}</span>
+					</li>
+				</ul>
+			</div>
+			<div v-else class="product-main-info">
+				<h6>Артикул <span>DF9234756</span></h6>
 				<div class="colors">
-					<h5>выбрать цвет</h5>
+					<h5>цвета</h5>
 					<div class="colors-list">
-						<div
-							v-for="(color, index) in product.colors"
-							@click="handleSelectColor(index, color)"
-							:key="color.color"
-							class="color-item"
-							:class="currentColor === index ? 'active' : ''"
-						>
+						<div v-for="color in product.colors" :key="color.color" class="color-item">
 							<div class="color-wrapper">
 								<div :style="`background-color: ${color.color}`" class="color"></div>
 							</div>
@@ -79,50 +72,21 @@ const handleSelectColor = (index, selectColor) => {
 					</div>
 				</div>
 			</div>
-			<div v-else class="product-main-info">
-				<h6>Артикул <span>DF9234756</span></h6>
-				<ul>
-					<li>
-						<h6>Ширина</h6>
-						<div class="line"></div>
-						<span>35 мм</span>
-					</li>
-					<li>
-						<h6>Длина</h6>
-						<div class="line"></div>
-						<span>50 мм</span>
-					</li>
-					<li>
-						<h6>Высота</h6>
-						<div class="line"></div>
-						<span>50 мм</span>
-					</li>
-					<li>
-						<h6>Толщина</h6>
-						<div class="line"></div>
-						<span>2 мм</span>
-					</li>
-					<li>
-						<h6>Количество в упаковке</h6>
-						<div class="line"></div>
-						<span>50 шт</span>
-					</li>
-				</ul>
-			</div>
+
 			<div class="cost">
 				<AddToCart
 					:id="product.id"
 					:text="product.title"
 					:price="product.price"
-					:img="product.settings ? product.imgs[currentColor][0] : product.imgs[0]"
+					:specifications="product.specifications"
+					:img="product.imgs[0]"
 					:url="product.url"
 					:count="count"
 					:changeCount="handleChangeCount"
 					:isTotal="true"
-					:width="width"
-					:length="length"
-					:type="type"
-					:color="color"
+					:width="product.width"
+					:length="product.length"
+					:thickness="product.thickness"
 				/>
 			</div>
 		</div>
@@ -248,7 +212,6 @@ const handleSelectColor = (index, selectColor) => {
 						}
 					}
 					.color-item {
-						cursor: pointer;
 						.color-wrapper {
 							padding: 4px;
 							border: 1px solid var(--light-gray-color);
