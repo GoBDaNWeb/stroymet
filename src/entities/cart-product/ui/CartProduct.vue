@@ -63,7 +63,8 @@ const conditionSettings = props.width && props.length && props.thickness;
 				</li>
 			</ul>
 			<div class="counter-wrapper">
-				<span>{{ price }} руб./шт.</span>
+				<span v-if="width && length && thickness">от {{ price }} руб./шт.</span>
+				<span v-else>{{ price }} руб./шт.</span>
 				<div class="counter">
 					<Button variable="count" @click="handleChangeCount('dec')">
 						<MinusIcon />
@@ -73,7 +74,8 @@ const conditionSettings = props.width && props.length && props.thickness;
 						<PlusIcon />
 					</Button>
 				</div>
-				<span> {{ price * count }} руб. </span>
+				<span v-if="width && length && thickness">от {{ price * count }} руб. </span>
+				<span v-else> {{ price * count }} руб. </span>
 			</div>
 		</div>
 		<Button variable="remove" @click="handleRemoveProduct"><RemoveIcon /></Button>

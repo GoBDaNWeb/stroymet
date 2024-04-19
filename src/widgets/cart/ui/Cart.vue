@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue';
+import { ref, watch, onMounted } from 'vue';
 import { RouterLink, useRouter } from 'vue-router';
 
 import { CartProduct } from '@/entities/cart-product';
@@ -18,7 +18,7 @@ const name = ref('');
 const nameError = ref(false);
 const phone = ref('');
 const phoneError = ref(false);
-
+const specificationsProduct = ref([]);
 const handleSetError = () => {
 	name.value.length === 0 ? (nameError.value = true) : (nameError.value = false);
 	phone.value.length === 0 ? (phoneError.value = true) : (phoneError.value = false);
@@ -38,6 +38,21 @@ const handleClearError = type => {
 		nameError.value = false;
 	}
 };
+
+onMounted(() => {
+	const filtered = cart.cartProducts.filter(product => {
+		return product.width && product.length && product.thickness;
+	});
+	specificationsProduct.value = filtered;
+})
+watch(() => cart.cartProducts, () => {
+	const filtered = cart.cartProducts.filter(product => {
+		return product.width && product.length && product.thickness;
+	});
+	specificationsProduct.value = filtered;
+});
+
+console.log(specificationsProduct);
 </script>
 
 <template>
@@ -71,7 +86,8 @@ const handleClearError = type => {
 					<div class="total">
 						<h5>итого:</h5>
 						<div class="line"></div>
-						<h5>{{ cart.getTotalPrice }} руб.</h5>
+						<h5 v-if="specificationsProduct.length > 0">от {{ cart.getTotalPrice }} руб.</h5>
+						<h5 v-else>{{ cart.getTotalPrice }} руб.</h5>
 					</div>
 					<form
 						@submit.prevent="handleSuccessModal"

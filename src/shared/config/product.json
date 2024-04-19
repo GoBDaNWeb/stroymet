@@ -23,7 +23,18 @@
 		"count": 1,
 		"width": "35 мм",
 		"length": "50 мм",
-		"thickness": "2 мм"
+		"thickness": "2 мм",
+		"colors": [
+			{ "color": "#175B9B", "title": "1014" },
+			{ "color": "#58A36D", "title": "1014" },
+			{ "color": "#9B5E17", "title": "1014" },
+			{ "color": "#9D4B32", "title": "1014" },
+			{ "color": "#5C3B31", "title": "1014" },
+			{ "color": "#FFFFFF", "title": "1014" },
+			{ "color": "#5E5E5E", "title": "1014" },
+			{ "color": "#2B2B2B", "title": "1014" },
+			{ "color": "#000000", "title": "1014" }
+		]
 	},
 	{
 		"id": "02",
@@ -55,9 +66,31 @@
 			{ "color": "#2B2B2B", "title": "1014" },
 			{ "color": "#000000", "title": "1014" }
 		],
-		"color": { "color": "#175B9B", "title": "1014" },
 		"price": 690,
 		"url": "/product/02",
+		"count": 1
+	},
+	{
+		"id": "03",
+		"title": "Металлочерепица МК 350 ",
+		"breadcrumbs": [
+			{ "url": "/", "title": "Главная" },
+			{ "url": "/catalog", "title": "Каталог" },
+			{ "url": "/catalog/perforation", "title": "Перфорация" },
+			{ "url": "/products/mounting-corners", "title": "Уголки крепежные" },
+			{ "url": "/product/02", "title": "Металлочерепица МК 350" }
+		],
+		"imgs": [
+			"/images/product/2.jpg",
+			"/images/product/2.jpg",
+			"/images/product/2.jpg",
+			"/images/product/2.jpg",
+			"/images/product/2.jpg",
+			"/images/product/2.jpg"
+		],
+		"specifications": false,
+		"price": 690,
+		"url": "/product/03",
 		"count": 1
 	}
 ]

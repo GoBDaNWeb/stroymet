@@ -6,7 +6,6 @@ import { DownloadIcon, PlusIcon } from '@/shared/icons';
 import { Button } from '@/shared/ui';
 
 const props = defineProps(['title', 'productList', 'haveBtn']);
-const cart = useCartStore();
 </script>
 
 <template>

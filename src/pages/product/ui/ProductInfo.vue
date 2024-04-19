@@ -57,10 +57,21 @@ const handleSelectColor = (index, selectColor) => {
 						<span>{{ product.thickness }}</span>
 					</li>
 				</ul>
+				<div v-if="product.colors" class="colors">
+					<h5>цвета</h5>
+					<div class="colors-list">
+						<div v-for="color in product.colors" :key="color.color" class="color-item">
+							<div class="color-wrapper">
+								<div :style="`background-color: ${color.color}`" class="color"></div>
+							</div>
+							<p>{{ color.title }}</p>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div v-else class="product-main-info">
 				<h6>Артикул <span>DF9234756</span></h6>
-				<div class="colors">
+				<div v-if="product.colors" class="colors">
 					<h5>цвета</h5>
 					<div class="colors-list">
 						<div v-for="color in product.colors" :key="color.color" class="color-item">
