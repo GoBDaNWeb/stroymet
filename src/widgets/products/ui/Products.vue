@@ -26,7 +26,6 @@ const props = defineProps(['title', 'productList', 'haveBtn']);
 				:width="product.width"
 				:length="product.length"
 				:thickness="product.thickness"
-				:specifications="product.specifications"
 			/>
 		</div>
 		<div class="button-wrapper" v-if="productList.length > 8">

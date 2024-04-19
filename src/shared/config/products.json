@@ -7,8 +7,7 @@
 		"text": "Уголок крепежный анкерный",
 		"width": "35 мм",
 		"length": "50 мм",
-		"thickness": "2 мм",
-		"specifications": true
+		"thickness": "2 мм"
 	},
 	{
 		"id": "02",
@@ -20,20 +19,7 @@
 			"/images/product/1.jpg"
 		],
 		"price": 774,
-		"text": "Уголок крепежный анкерный",
-		"specifications": false,
-		"colors": [
-			{ "color": "#175B9B", "title": "1014" },
-			{ "color": "#58A36D", "title": "1014" },
-			{ "color": "#9B5E17", "title": "1014" },
-			{ "color": "#9D4B32", "title": "1014" },
-			{ "color": "#5C3B31", "title": "1014" },
-			{ "color": "#FFFFFF", "title": "1014" },
-			{ "color": "#5E5E5E", "title": "1014" },
-			{ "color": "#2B2B2B", "title": "1014" },
-			{ "color": "#000000", "title": "1014" }
-		],
-		"color": { "color": "#175B9B", "title": "1014" }
+		"text": "Уголок крепежный анкерный"
 	},
 	{
 		"id": "03",

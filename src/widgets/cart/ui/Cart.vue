@@ -52,7 +52,6 @@ watch(() => cart.cartProducts, () => {
 	specificationsProduct.value = filtered;
 });
 
-console.log(specificationsProduct);
 </script>
 
 <template>

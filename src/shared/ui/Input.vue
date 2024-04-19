@@ -1,5 +1,5 @@
 <script setup>
-import { computed, defineEmits, defineProps, ref, watch } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { TheMask } from 'vue-the-mask';
 
 const props = defineProps(['type', 'placeholder', 'value', 'modelValue', 'error', 'modelValue']);

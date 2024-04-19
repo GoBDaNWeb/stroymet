@@ -17,7 +17,6 @@
 			"/images/product/1.jpg",
 			"/images/product/1.jpg"
 		],
-		"specifications": true,
 		"price": 774,
 		"url": "/product/01",
 		"count": 1,
@@ -54,7 +53,6 @@
 			"/images/product/2.jpg",
 			"/images/product/2.jpg"
 		],
-		"specifications": false,
 		"colors": [
 			{ "color": "#175B9B", "title": "1014" },
 			{ "color": "#58A36D", "title": "1014" },
@@ -88,7 +86,6 @@
 			"/images/product/2.jpg",
 			"/images/product/2.jpg"
 		],
-		"specifications": false,
 		"price": 690,
 		"url": "/product/03",
 		"count": 1

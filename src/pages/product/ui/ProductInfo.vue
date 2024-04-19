@@ -38,7 +38,7 @@ const handleSelectColor = (index, selectColor) => {
 		<h1>{{ product.title }}</h1>
 		<div class="product-info-content">
 			<ProductSwiper :imgs="product.imgs" />
-			<div v-if="product.specifications" class="product-main-info">
+			<div v-if="product.width && product.length && product.thickness" class="product-main-info">
 				<h6>Артикул <span>DF9234756</span></h6>
 				<ul>
 					<li>
